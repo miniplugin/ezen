@@ -2,7 +2,7 @@
 ## 스프링부트(자바) 프로그래밍
 ### 커리큘럼
 - 1차 코스(아래)
-- ![1차코스](./README/course1.jpg)
+- ![1차코스](./README/course3.jpg)
 - 2차 코드(아래)
 - ![2차코스](./README/course2.jpg)
 
