@@ -35,25 +35,8 @@ class MemberVO {
 	private String name;
 	private int age;
 	private String phoneNum;
-  
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	public String getPhoneNum() {
-		return phoneNum;
-	}
-	public void setPhoneNum(String phoneNum) {
-		this.phoneNum = phoneNum;
-	}
+	
+  	//학생이 Getter, Setter 메서드 생성(아래)
 }
 
 //서비스 클래스 - 출력용 메서드 작성(아래)
@@ -62,9 +45,7 @@ class MemberService {
 	public void printMembers(MemberVO[] members) {
 		for (MemberVO m : members) {
 			System.out.println("------------");
-			System.out.println(m.getName());
-			System.out.println(m.getAge() + "세");
-			System.out.println(m.getPhoneNum());
+			//학생이 출력 메서드 사용(아래)
 		}
 	}
   
