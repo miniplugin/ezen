@@ -2,7 +2,7 @@ public class OneClass {
 
 	public static void main(String[] args) {
   
-    MemberVO m1 = new MemberVO();
+		MemberVO m1 = new MemberVO();
 		m1.setName("홍길동");
 		m1.setAge(45);
 		m1.setPhoneNum("000-0000-0000");
@@ -25,6 +25,7 @@ public class OneClass {
 		MemberService t = new MemberService();
 		t.printMembers(members);
 	}
+	
 }
 
 // 자료형 클래스(아래)
