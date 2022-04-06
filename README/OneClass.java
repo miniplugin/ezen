@@ -1,3 +1,4 @@
+//메인 실행 클래스 - main 메서드 작성(아래)
 public class OneClass {
 
 	public static void main(String[] args) {
@@ -28,7 +29,7 @@ public class OneClass {
 	
 }
 
-// 자료형 클래스(아래)
+// 자료형 데이터 클래스(아래)
 class MemberVO {
 
 	private String name;
