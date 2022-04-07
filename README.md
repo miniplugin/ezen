@@ -38,7 +38,7 @@
  * 이클립스 설치 후 최초 window -> preferences 설정창에서 환경설정 작업 아래 4가지 필수
  * 검색어(encoding): UTF8로 변경, 
  * 검색어(font): basic 16px로 변경, 
- * 검색어(assist): Auto Activator 항목에 다음 텍스트 입력 <=$:{.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
+ * 검색어(assist): Auto Activator 항목에 다음 텍스트 입력 <=$:.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
  * Disable insertion triggers except 'Enter'
  * 아래는 클래스 다이어그램(클래스 구조도)확인하는 플러그인 설치
  * Help -> Install New Software,.. -> Work with 에 https://takezoe.github.io/amateras-update-site 입력 후 엔터
