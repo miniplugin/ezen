@@ -29,3 +29,16 @@
 - 줌으로 학습하는 다른 학생들도 여러 에러 상황을 같이 확인할 수 있게 됩니다.
 - 애니데스크 실행 후 이 워크스테이션 주소를 강사에게 알려주면 된다.(아래)
 - ![애니데스크 실행](./README/anydesk.jpg)
+
+#### 개발환경 통일
+- 오픈소스 자바 11로 통일: C:\ezen 폴더에 압축을 푼다.
+- 이클립스는 최신 버전으로 설치: C:\ezen 폴더에 설치한다. 설치시 JVM 위치를 자바설치 폴더를 지정한다.
+- 이클립스 최초 실행시 아래 설정 부터 처리 한다.
+/**
+ * 이클립스 설치 후 최초 작업 아래 3가지 필수
+ * window -> preferences: encoding UTF8로 변경, 
+ * font basic 16px로 변경, 
+ * assist Auto Activator 항목에 다음 텍스트 입력 <=$:{.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
+ *
+ */
+ - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
