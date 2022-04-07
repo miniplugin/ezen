@@ -39,7 +39,7 @@
  * window -> preferences: encoding UTF8로 변경, 
  * font basic 16px로 변경, 
  * assist Auto Activator 항목에 다음 텍스트 입력 <=$:{.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
- * Help -> Eclipse Marketplace -> UML 검색 Eclipse UML Generators 설치
+ * Help -> Eclipse Marketplace -> UML 검색 UMLet 설치
  */
  - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
  
