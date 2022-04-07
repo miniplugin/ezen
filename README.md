@@ -35,10 +35,12 @@
 - 이클립스는 최신 버전으로 설치: C:\ezen 폴더에 설치한다. 설치시 JVM 위치를 자바설치 폴더를 지정한다.
 - 이클립스 최초 실행시 아래 설정 부터 처리 한다.
 /**
- * 이클립스 설치 후 최초 작업 아래 3가지 필수
- * window -> preferences: encoding UTF8로 변경, 
- * font basic 16px로 변경, 
- * assist Auto Activator 항목에 다음 텍스트 입력 <=$:{.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
+ * 이클립스 설치 후 최초 window -> preferences 설정창에서 환경설정 작업 아래 4가지 필수
+ * 검색어(encoding): UTF8로 변경, 
+ * 검색어(font): basic 16px로 변경, 
+ * 검색어(assist): Auto Activator 항목에 다음 텍스트 입력 <=$:{.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
+ * Disable insertion triggers except 'Enter'
+ * 아래는 클래스 다이어그램(클래스 구조도)확인하는 플러그인 설치
  * Help -> Install New Software,.. -> Work with 에 https://takezoe.github.io/amateras-update-site 입력 후 엔터
  */
  - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
