@@ -4,4 +4,6 @@
  * 우리 수업에서는 고려하지 않는다.
  */
 module ezen {
+	requires org.json;
+	requires java.desktop;
 }
