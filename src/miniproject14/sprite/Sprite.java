@@ -1,4 +1,4 @@
-package miniproject14;
+package miniproject14.sprite;
 
 import java.awt.Graphics;
 import java.awt.Image;

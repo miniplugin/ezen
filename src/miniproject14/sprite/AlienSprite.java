@@ -1,6 +1,8 @@
-package miniproject14;
+package miniproject14.sprite;
 
 import java.awt.Image;
+
+import miniproject14.GalagaGame;
 
 /**
  * 에얼리언 객체의 동작을 다룰 클래스

@@ -12,6 +12,11 @@ import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+import miniproject14.sprite.AlienSprite;
+import miniproject14.sprite.ShotSprite;
+import miniproject14.sprite.Sprite;
+import miniproject14.sprite.StarShipSprite;
 /**
  * 겔라가 게임 메인(전체기능에서 스레드 기능을 제거한, 내 총에 에일리언이 삭제되는 기능만 구현)
  * @author kimilguk
@@ -39,9 +44,9 @@ public class GalagaGame extends JPanel implements KeyListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		try {//이미지를 파일에서 읽어옴
-			shotImage = ImageIO.read(new File("./src/miniproject14/fire.png"));
-			shipImage = ImageIO.read(new File("./src/miniproject14/starship.png"));
-			alienImage = ImageIO.read(new File("./src/miniproject14/alien.png"));
+			shotImage = ImageIO.read(new File("./src/miniproject14/image/fire.png"));
+			shipImage = ImageIO.read(new File("./src/miniproject14/image/starship.png"));
+			alienImage = ImageIO.read(new File("./src/miniproject14/image/alien.png"));
 
 		} catch (IOException e) {
 			e.printStackTrace();

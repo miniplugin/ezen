@@ -1,6 +1,8 @@
-package miniproject14;
+package miniproject14.sprite;
 
 import java.awt.Image;
+
+import miniproject14.GalagaGame;
 
 /**
  * 불꽃 발사를 다루기 위한 클래스
