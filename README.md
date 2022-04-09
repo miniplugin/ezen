@@ -13,8 +13,35 @@
 - 그래서, 상황에 따라서 8장~11장(4일)은 아래 소스로 강의를 진행 할 수도 있다.
 - [자바리뷰학습자료 강의용소스 링크](https://github.com/miniplugin/ezen/tree/main/src/basic)
 
+#### 개발환경 통일
+- 오픈소스 자바 11로 통일: C:\ezen 폴더에 압축을 푼다.
+- 이클립스는 최신 버전으로 설치: C:\ezen 폴더에 설치한다. 설치시 JVM 위치를 자바설치 폴더를 지정한다.
+- 이클립스 최초 실행시 아래 설정 부터 처리 한다.
+/**
+ * 이클립스 설치 후 최초 window -> preferences 설정창에서 환경설정 작업 아래 4가지 필수
+ * 검색어(encoding): UTF8로 변경, 
+ * 검색어(font): basic 16px로 변경, 
+ * 검색어(assist): Auto Activator 항목에 다음 텍스트 입력 <=$:.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
+ * Disable insertion triggers except 'Enter'
+ * 아래는 클래스 다이어그램(클래스 구조도)확인하는 플러그인 설치
+ * Help -> Install New Software,.. -> Work with 에 https://takezoe.github.io/amateras-update-site 입력 후 엔터 -> Modeler 선택
+ */
+ - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
+ 
+### 교재의 마지막 14장의 mini project (다른 문제해결 프로그램으로 대체예정)
+- mini project 프로그램 결과.(아래)
+- ![프로그램 결과](./README/miniproject14_2.jpg)
+- mini project 프로그램 클래스 다이어그램.(아래)
+- ![프로그램 결과 클래스 다이어그램](./README/miniproject14_1.jpg)
+
+### 자바프로그래밍 학점 산출 프로그램 시간에 같이 진도를 나갑니다.
+- 학점 산출 프로그램 결과.(아래)
+- ![학점 산출 프로그램 결과](./README/portfolio.jpg)
+- 학점 산출 프로그램 클래스 다이어그램.(아래)
+- ![학점 산출 프로그램 클래스 다이어그램](./README/classdiagram.jpg)
+
 ### 학생PC 준비사항
-#### 대면수업 시 교사PC 화면공유 무료 프로그램 활용(아래)
+#### 대면수업 시 프로젝트 내용이 자세히 보이지 않을 때 교사PC 화면공유 무료 프로그램 활용(아래)
 - https://www.freeconferencecall.com/ 다운로드: https://drive.google.com/file/d/1ZGj8EbbzSkqJYDkA-rnHoqLXYhLjeFN1/view?usp=sharing
 - 학생들은 아래 화면 순서대로 사용
 - JOIN 으로 접속(아래)
@@ -36,30 +63,3 @@
 - 줌으로 학습하는 다른 학생들도 여러 에러 상황을 같이 확인할 수 있게 됩니다.
 - 애니데스크 실행 후 이 워크스테이션 주소를 강사에게 알려주면 된다.(아래)
 - ![애니데스크 실행](./README/anydesk.jpg)
-
-#### 개발환경 통일
-- 오픈소스 자바 11로 통일: C:\ezen 폴더에 압축을 푼다.
-- 이클립스는 최신 버전으로 설치: C:\ezen 폴더에 설치한다. 설치시 JVM 위치를 자바설치 폴더를 지정한다.
-- 이클립스 최초 실행시 아래 설정 부터 처리 한다.
-/**
- * 이클립스 설치 후 최초 window -> preferences 설정창에서 환경설정 작업 아래 4가지 필수
- * 검색어(encoding): UTF8로 변경, 
- * 검색어(font): basic 16px로 변경, 
- * 검색어(assist): Auto Activator 항목에 다음 텍스트 입력 <=$:.@qwertyuioplkjhgfdsazxcvbnm_QWERTYUIOPLKJHGFDSAZXCVBNM
- * Disable insertion triggers except 'Enter'
- * 아래는 클래스 다이어그램(클래스 구조도)확인하는 플러그인 설치
- * Help -> Install New Software,.. -> Work with 에 https://takezoe.github.io/amateras-update-site 입력 후 엔터
- */
- - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
- 
-### 교재의 마지막 14장의 mini project (다른 문제해결 프로그램으로 대체예정)
-- mini project 프로그램 결과.(아래)
-- ![프로그램 결과](./README/miniproject14_2.jpg)
-- mini project 프로그램 클래스 다이어그램.(아래)
-- ![프로그램 결과 클래스 다이어그램](./README/miniproject14_1.jpg)
-
-### 자바프로그래밍 학점 산출 프로그램 시간에 같이 진도를 나갑니다.
-- 학점 산출 프로그램 결과.(아래)
-- ![학점 산출 프로그램 결과](./README/portfolio.jpg)
-- 학점 산출 프로그램 클래스 다이어그램.(아래)
-- ![학점 산출 프로그램 클래스 다이어그램](./README/classdiagram.jpg)
