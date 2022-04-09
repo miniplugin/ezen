@@ -13,7 +13,7 @@
 - 그래서, 8장~14장(7일)은 빠르게 진행하고 시간이 있다면 추가로 아래 소스로 강의를 진행 할 수도 있다.
 - [자바리뷰학습자료 강의용소스 링크](https://github.com/miniplugin/ezen/tree/main/src/basic)
 
-### 1차 코스에서 교재의 마지막 14장의 mini project 미리보기(1장~7장 기반 프로그램으로 대체예정)
+### 1차 코스에서 교재 마지막14장의 mini project 미리보기(1장~7장 기반 프로그램으로 대체예정)
 - mini project 프로그램 결과.(아래)
 - ![프로그램 결과](./README/miniproject14_2.jpg)
 - mini project 프로그램 클래스 다이어그램.(아래)
