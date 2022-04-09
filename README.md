@@ -13,7 +13,19 @@
 - 그래서, 상황에 따라서 8장~14장(7일)은 빠르게 진행하고 여유시간에 아래 소스로 강의를 진행 할 수도 있다.
 - [자바리뷰학습자료 강의용소스 링크](https://github.com/miniplugin/ezen/tree/main/src/basic)
 
-#### 개발환경 통일
+### 1코스 교재의 마지막 14장의 mini project (다른 문제해결 프로그램으로 대체예정)
+- mini project 프로그램 결과.(아래)
+- ![프로그램 결과](./README/miniproject14_2.jpg)
+- mini project 프로그램 클래스 다이어그램.(아래)
+- ![프로그램 결과 클래스 다이어그램](./README/miniproject14_1.jpg)
+
+### 2코스 자바프로그래밍 학점 산출 프로그램 시간에 같이 진도를 나갑니다.
+- 학점 산출 프로그램 결과.(아래)
+- ![학점 산출 프로그램 결과](./README/portfolio.jpg)
+- 학점 산출 프로그램 클래스 다이어그램.(아래)
+- ![학점 산출 프로그램 클래스 다이어그램](./README/classdiagram.jpg)
+
+#### 개발환경 통일(ppt수업 진행 시 참조)
 - 오픈소스 자바 11로 통일: C:\ezen 폴더에 압축을 푼다.
 - 이클립스는 최신 버전으로 설치: C:\ezen 폴더에 설치한다. 설치시 JVM 위치를 자바설치 폴더를 지정한다.
 - 이클립스 최초 실행시 아래 설정 부터 처리 한다.
@@ -27,18 +39,6 @@
  * Help -> Install New Software,.. -> Work with 에 https://takezoe.github.io/amateras-update-site 입력 후 엔터 -> Modeler 선택
  */
  - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
- 
-### 교재의 마지막 14장의 mini project (다른 문제해결 프로그램으로 대체예정)
-- mini project 프로그램 결과.(아래)
-- ![프로그램 결과](./README/miniproject14_2.jpg)
-- mini project 프로그램 클래스 다이어그램.(아래)
-- ![프로그램 결과 클래스 다이어그램](./README/miniproject14_1.jpg)
-
-### 자바프로그래밍 학점 산출 프로그램 시간에 같이 진도를 나갑니다.
-- 학점 산출 프로그램 결과.(아래)
-- ![학점 산출 프로그램 결과](./README/portfolio.jpg)
-- 학점 산출 프로그램 클래스 다이어그램.(아래)
-- ![학점 산출 프로그램 클래스 다이어그램](./README/classdiagram.jpg)
 
 ### 학생PC 준비사항
 #### 대면수업 시 프로젝트 내용이 자세히 보이지 않을 때 교사PC 화면공유 무료 프로그램 활용(아래)
