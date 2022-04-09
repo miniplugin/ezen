@@ -82,9 +82,8 @@ public class GalagaGame extends JPanel implements KeyListener {
 		sprites.remove(sprite);
 	}
 
-	public void fire() {//총알 불꽃객체 생성
-		ShotSprite shot = new ShotSprite(this, shotImage, starship.getX() + 10,
-				starship.getY() - 30);
+	public void fire() {//포탄 불꽃객체 생성
+		ShotSprite shot = new ShotSprite(this, shotImage, starship.getX() + 10, starship.getY() - 30);
 		sprites.add(shot);
 	}
 
@@ -115,8 +114,8 @@ public class GalagaGame extends JPanel implements KeyListener {
 					Sprite other = (Sprite) sprites.get(s);
 					//어떤 두 객체에서 충돌이 발생했으면(아래)
 					if (me.checkCollision(other)) {
-						me.handleCollision(other);//내가 에일리언 총알에 충돌할 때 처리한다.
-						other.handleCollision(me);//에이리언이 내 총알에 충돌할 때 처리함
+						me.handleCollision(other);//내가 에일리언 포탄에 충돌할 때 처리한다.
+						other.handleCollision(me);//에이리언이 내 포탄에 충돌할 때 처리함
 					}
 				}
 			}
@@ -136,7 +135,7 @@ public class GalagaGame extends JPanel implements KeyListener {
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT)
 			starship.setDx(+3);//오른쪽으로 이동
 		if (e.getKeyCode() == KeyEvent.VK_SPACE)
-			fire();//총알발사
+			fire();//포탄발사
 	}
 	//키에서 손을 떼면 움직임을 멈춤(아래)
 	@Override
