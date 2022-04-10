@@ -3,7 +3,9 @@
 ### 커리큘럼
 - 1차 코스(아래) 교재사용:Power Java Compact,출판사: 인피니트 북스
 - ![1차코스](./README/course1.png)
-- [Power Java 책의 강의용소스 링크:소스폴더 ppt01~ppt14 사이](https://github.com/miniplugin/ezen/tree/main/src)
+- [Power Java 책의 ppt강의 소스 링크](https://github.com/miniplugin/ezen/tree/main/src/ppt)
+- [Power Java 책의 mini project소스 답안](https://github.com/miniplugin/ezen/tree/main/src/miniproject)
+- [Power Java 책의 이론exercise와 실습exercise 답안](https://github.com/miniplugin/ezen/tree/main/src/exercise)
 
 - 2차 코스(아래)
 - ![2차코스](./README/course2.png)
