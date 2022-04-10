@@ -5,6 +5,8 @@
 2.1 교사가 제시한 1개 자바 파일을 아래 보기처럼 출력되게 수정한다.
 - 수정할 소스 파일위치: https://github.com/miniplugin/ezen/blob/main/README/OneClass.java
 - 아래처럼 출력 되도록 프로그램 작성. (단, 이름은 본인 이름이 나오도록 변경하시오.)
+
+```
 ------------
 홍길동
 45세
@@ -17,6 +19,7 @@
 각시탈
 3세
 222-2222-2222
+```
 
 2.2. 위 1개의 파일을 3개의 클래스파일로 분리한다.(아래)
 - MainControler(main함수), MemberVO(String name,int age,String phoneNum필드), MemberService(printMembers매서드)
