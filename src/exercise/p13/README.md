@@ -1,36 +1,46 @@
-## Excercise
-#1.  
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.자바에서 입력과 출력을 담당하는 패키지는?
 ANSWER  
 
 ```
- ②
+(1)java.input (2)java.io (3)java.output (4)java.file
+-답변: ② java.io
 ```
 
-#2.   
+#2.문자 입력을 담당하는 가장 기본적인 추상 클래스 이름은 무엇인가?
 ANSWER  
 
 ```
- ③
+(1)InputStream (2)OutputStream (3)Reader (4)Writer
+-답변: ③ InputStream
 ```
 
-#3.   
+#3.FileWriter 생성자에 잘못된 파일 이름이 전달되면 어떻게 되는가?
 ANSWER 
 
 ``` 
- ④
+(1)그대로 계속된다. (2)사용자 디스크기 손상된다. (3)생성자가 null 값을 반환한다. (4)IOException이 발생한다.
+-답변: ④ IOException이 발생한다.
 ```
 
-#4.   
+#4.다음과 같은 파일을 읽을 때 가장 적합한 스트림 클래스는 무엇일까?
 ANSWER  
 
 ``` 
-(1) FileInputStream
-(2) FileReader
-(3) FileInputStream
-(4) FileReader
+(1) 이미지 파일: FileInputStream
+(2) 메모장 파일(텍스트파일): FileReader
+(3) mp3 파일: FileInputStream
+(4) HTML 파일: FileReader
 ```
 
-#5.   
+#5.다음 문장은 올바르게 컴파일되는가?
+
+```
+File file = new File("test.txt");
+FileReader in = new FileReader(file);
+```
 ANSWER  
  예외를 처리해주어야 한다. 
 
@@ -43,32 +53,40 @@ try {
 }
 ```
 
-#6.   
+#6.텍스트 파일을 읽으려고 한다. 느린전송속도에 따른 처리속도의 저하를 막기 위하여 버퍼를 사용하려고 한다.
+어떤 스트림 클래스를 어떻게 연결하여야 하는가?
 ANSWER  
 
 ```
  BufferedReader in = new BufferedReader(new FileReader(new File("sample-file.txt")));
 ```
 
-#7.   
+#7.다음은 텍스트 파일을 읽는 문장이다. 만약 디스크에 파일이 없다면 에러가 발생한다.
+예외는 try-catch 구조를 사용하여 처리할 수 있다. 아래의 문장 예외가 처리되도록 코드를 추가해보자.
+
+```
+FileReader fr = new FileReader("./src/test.txt");
+```
 ANSWER  
 
 ```
 try {
-	FileReader fr = new FileReader( file );
+	FileReader fr = new FileReader("./src/test.txt");
 } catch (FileNotFoundException e) {
 	e.printStackTrace();
 }
 ```
 
-#8.   
+#8.자동차를 나타내는 Car 클래스가 정의되어 있다고 가정하자.
 ANSWER  
 
 ```
-(1) FileInputStream in = new FileInputStream("Car.obj") ;
+(1) 참조(매개) 변수 myCar가 가리키는 Car 객체를 직렬화하여서 파일 Car.obj에 데이터를 저장하는 문장을 작성하시오.
+-답변: FileInputStream in = new FileInputStream("Car.obj") ;
    ObjectOutputStream o = new ObjectOutputStream(in);
    o.wirteObject(myCar);
-(2) FileInputStream in = new FileInputStream("Car.obj");
+(2) 파일 Car.obj에 저장된 객체를 역직렬화하여서 복원하는 문장을 작성하시오.
+-답변: FileInputStream in = new FileInputStream("Car.obj");
   ObjectInputStream o = new ObjectInputStream(in);
   Car myCar = (Car)o.readObject();
 ```

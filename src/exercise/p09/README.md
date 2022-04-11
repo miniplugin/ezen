@@ -1,14 +1,19 @@
-## Excercise
-#1.  
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.다음 문장이 참인지 거짓인지를 판단하시오. 거짓이면 올바르게 수정하시오.
 ANSWER  
 
 ```
-(1) 거짓 – 액션 이벤트
-(2) 거짓 - 마우스가 움직였을 때 발생하는 이벤트는 MouseMotionEvent이다
-(3) 거짓 - 어댑터 클래스를 사용하면 원하는 메소드만을 구현하는 것이 가능해짐
+(1) 버튼에서 발생하는 이벤트는 Key 이벤트이다.
+-답변: 거짓 – 액션 이벤트
+(2) 마우스가 움직였을 때 발생하는 이벤트는 MouseEvent이다.
+-답변: 거짓 - 마우스가 움직였을 때 발생하는 이벤트는 MouseMotionEvent이다
+(3) 어댑터 클래스를 사용하면 코드가 길어진다.
+-답변: 거짓 - 어댑터 클래스를 사용하면 원하는 메소드만을 구현하는 것이 가능해짐
 ```
 
-#2.  
+#2.버튼 컴포넌트 b에 액션 리스터 객체 obj를 등록하는 문장을 작성하시오.
 ANSWER  
 
 ```
@@ -16,14 +21,29 @@ JButton b = new JButton("test");
 b.addActionListener(new MyListener());
 ```
 
-#3.  
+#3.사용자가 키보드의 키를 눌렀을 때 keyTyped(),keyPressed(),KeyReleased()가 호출되는 순서는 무엇인가?
+실제 프로그램을 작성하여 알아보아도 좋다.
 ANSWER  
 
 ```
  keyPressed() -> keyTyped() -> KeyReleased()
 ```
 
-#4.  
+#4.다음의 이벤트 처리 코드를 무명 클래스를 이용하여 다시 작성하여 보자.
+
+```
+class MyFrame extends JFrame implements ActionListener {
+	JButton button;
+	public MyFrame() {
+		button = new JButton("버튼을 누르시오");
+		button.addActionListener(this);
+		//...
+	}
+	public void actionPerformed(ActionEvent e) {
+		System.out.println("마침재 버튼이 눌려졌습니다.");
+	}
+}
+```
 ANSWER  
 
 ```
@@ -33,6 +53,7 @@ class MyFrame extends JFrame {
 		button = new JButton("버튼을 누르시오");
 		button.addActionListener(new ActionListener()
 		{
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("마침내 버튼이 눌려졌습니다.");
 			}
@@ -41,7 +62,7 @@ class MyFrame extends JFrame {
 }
 ```
 
-#5.  
+#5.4번의 이벤트 처리 코드를 람다식을 사용하여 다시 작성하여 보자.
 ANSWER  
 
 ```
@@ -54,11 +75,31 @@ class MyFrame extends JFrame {
 }
 ```
 
-#6.  
+#6.다음의 이벤트 처리 코드를 MouseAdapter 클래스를 사용하여 다시 작성하여 보자.
+
+```
+addMouseListener(new MouseListener() {//마우스리스너 익명클래스는 모든 메서드가 구현되야한다.
+	@Override
+	public void mousePressed(MouseEvent e) {
+		img_x = e.getX();
+		img_y = e.getY();
+		repaint();
+	}
+	@Override
+	public void mouseReleased(MouseEvent e) {}
+	@Override
+	public void mouseEntered(MouseEvent e) {}
+	@Override
+	public void mouseExited(MouseEvent e) {}
+	@Override
+	public void mouseClicked(MouseEvent e) {}
+});
+```
 ANSWER  
 
 ```
-	this.addMouseListener(new MouseAdapter() {
+	this.addMouseListener(new MouseAdapter() { //마우스어댑터 익명클래스는 필요한 메서드만 구현하면된다.
+			@Override
 			public void mousePressed(MouseEvent e) {
 				img_x = e.getX();
 				img_y = e.getY();

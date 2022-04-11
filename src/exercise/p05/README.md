@@ -1,5 +1,8 @@
-## Excercise
-#1.  
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.만약 어떤 values라는 double형 배열이 init() 메서드의 매개 변수로 넘어왔다고 하자.
+배열의 각 원소를 0으로 초기화하는 문장을 작성하라.
 ANSWER  
 
 ```
@@ -9,31 +12,81 @@ void init(double[] values){
 }
 ```
 
-#2.  
+#2.다음 프로그램의 실행 결과는 무엇일까? 이유를 설명하라.
 ANSWER  
 
 ```
- 자바에서는 모든 것이 call-by-value 방식으로 전달된다. 
+public class Test {
+	public static void main(String[] args) {
+		String x = null;
+		giveMeAString(x);
+		System.out.println(x);
+	}
+	static void giveMeAString(String y) {
+		y = "This is a String";
+	}
+}
+-답변
+ 자바에서는 모든 것이 call-by-value 방식으로 전달된다. 그래서 출력은 null.
  따라서 위의 프로그램에서는 참조 변수 x의 값이 참조 변수 y로 복사된다. 
  참조 변수 y의 값을 변경하여도 변수 x의 값은 변경되지 않는다. 
 ```
 
-#3.  
+#3.다음 프로그램의 출력은?
 ANSWER  
 
 ```
+public class Test {
+	public static void main(String[] args) {
+		class MyClass {
+			public int i = 3;
+		}
+		MyClass obj = new MyClass();
+		System.out.println("i = " + obj.i);
+	}
+}
+-답변
  i = 3
 ```
 
-#4.  
+#4.다음 프로그램의 출력은?
 ANSWER  
 
 ```
+class Point {
+	int x;
+	int y;
+}
+public class Test {
+	public static void main(String[] args) {
+		Test obj = new Test();
+		obj.sub();
+	}
+	void sub() {
+		Point p = new Point();//Point는 x,y 좌표변수를 갖는 내장 클래스이다.
+		p.x = 10;
+		p.y = 10;
+		set(p);
+		System.out.println(p.x + "," + p.y);
+	}
+	void set(Point p) {
+		p.x = 30;
+		p.y = 40;
+	}
+}
+-답변
  30,40
 ```
 
-#5.  
+#5.다음 코드는 배열 a를 배열 b로 복사하려는 의도로 작성되었다. 실제 배열이 복사되는가?
+만약 올바르지 않다면 올바르게 복사되도록 코드를 수정하라.
 ANSWER  
+
+```
+int[] a = {1, 2, 3, 4, 5};
+int[] b = new int[5];
+b = a; //배열 a를 배열 b로 복사
+```
  배열이 복사되지 않는다. 다음과 같이 하여야 한다. 
 
 ```
@@ -43,11 +96,29 @@ for(int i = 0; i < a.length; i++)
 	b[i] = a[i]; 
 ```
 
-#6.  
+#6.객체 중에는 전체 시스템을 통틀어 딱 하나만 존재하여야 하는 것들이 있다.
+다음의 프로그램을 분석하여서 왜 객체가 하나만 생성되는지를 설명하라. 단, 이러한 객체를 생성할 때는 new를 사용하지 않고
+정적 메서드 getInstance()를 호출하여야 한다. 이것은 싱글톤 디자인 패턴(singleton design pattern)으로 불린다.
 ANSWER
 
 ```  
+static class Single {
+	private static Single s_instance;
+	private static Single getInstance() {
+		if(s_instance == null) {
+			s_instance = new Single();
+		}
+		return s_instance;
+	}
+}
+public class SingleTest {
+	public static void main(String[] args) {
+		Single obj1 = Single.getInstance();
+		Single obj2 = Single.getInstance();
+	}
+}
  s_instance가 null일 때만 객체를 생성하고 이미 객체가 생성되어 있으면 단순히 객체의 참조값을 반환한다. 
+ 확인 코드: if(obj1 == obj2) { System.out.println("같은 객체 입니다."); }
 ```
 
 ## Program Exercise

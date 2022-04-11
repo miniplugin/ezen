@@ -1,61 +1,89 @@
-## Excercise
-#1.   
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.double 형을 저장하는 ArrayList를 생성하는 문장을 작성하시오.
 ANSWER 
 
 ``` 
  ArrayList<Double> list = new ArrayList<Double>();
 ```
 
-#2.   
+#2.여러분이 어떤 정보를 저장하는데 절대 중복이 발생하면 안된다고 가정하자.
+그리고 모든 요소들은 삽입된 순서대로 출력되어야 한다. 어떤 컬렉션을 사용하여야 하는가?
 ANSWER  
 
 ```
- ②java.util.Set
+(1)java.util.Map (2)java.util.Set (3)java.util.List (4)java.util.Collection
+-답변: ②java.util.Set
 ```
 
-#3.   
+#3.어떤 정보를 키:값의 쌍으로 저장하고자 한다. 어떤 컬렉션을 사용하여야 하는가?
 ANSWER  
 
 ```
- ①java.util.Map 
+(1)java.util.Map (2)java.util.Set (3)java.util.List (4)java.util.Collection
+-답변: ①java.util.Map 
 ```
 
-#4.   
+#4.다음은 Stack 클래스의 일부분이다.
+
+```
+public class Stack {
+	private init[] stack;
+	public void push(int data) { ... }
+	public int pop() { ... }
+}
+```
 ANSWER  
 
 ``` 
-(1)
-public class Stack <T> {
+(1) Stack에 자장되는 데이터의 타입을 int 대신에 제네릭 타입츠로 표시하여 보자.
+-답변:
+public class Stack<T> {
     private T[] stack;
     public void push(T data) { ... }
     public T pop() { ... }
 }
 
-(2) 
-Stack<String> s = new Stack<String>();
+(2) String 타입의 데이터를 가지는 Stack을 생성하는 문장을 쓰시오.
+-답변: Stack<String> s = new Stack<String>();
 ```
 
-#5.   
+#5.다음과 같이 리스트가 생성되었다고 하자. 다음의 각 문장을 실행한 후의 결과를 쓰시오.
+
+```
+String[] s = { "사과", "배", "바나나" };
+ArrayList list = new ArrayList(Arrays.asList(s));
+```
 ANSWER  
 
 ``` 
-(1) [사과, 배, 바나나, 포도]
-(2) [사과, 배, 자몽, 바나나, 포도]
-(3) 바나나
-(4) [사과, 자몽, 바나나, 포도]
-(5) true
-(6) 0
+(1) lias.add("포도"); System.out.Println(list);
+-답변: [사과, 배, 바나나, 포도]
+(2) lias.add(2, "자몽"); System.out.Println(list);
+-답변: [사과, 배, 자몽, 바나나, 포도]
+(3) System.out.Println(list.get(3));
+-답변: 바나나
+(4) list.remove(1); System.out.println(list);
+-답변: [사과, 자몽, 바나나, 포도]
+(5) System.out.println(list.contains("사과"));
+-답변: true
+(6) System.out.println(list.indexOf("사과"));
+-답변: 0
 ```
 
-#6.   
+#6.list가 ArrayList<Double>의 객체를 참조하고 있다고 하자.
+list의 모든 원소를 출력하는 문장을 다음과 같이 작성하라.
 ANSWER  
 
 ``` 
-(1) 
+(1) 인덱스 변수를 사용하는 보통의 for 루프
+-답변:
 for(int i=0;i<list.length;i++)
 	System.out.println(list[i]);
-(2) 
-for(Double data; list)
+(2) for~each 구문을 사용
+-답변:
+for(Double data: list)
 	System.out.println(data);
 ```
 

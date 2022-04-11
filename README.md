@@ -3,16 +3,16 @@
 ### 커리큘럼
 - 1차 코스(아래) 교재사용:Power Java Compact,출판사: 인피니트 북스
 - ![1차코스](./README/course1.png)
-- [Power Java 책의 ppt강의용 자바소스 링크](https://github.com/miniplugin/ezen/tree/main/src/ppt)
-- [Power Java 책의 mini project소스 답안](https://github.com/miniplugin/ezen/tree/main/src/miniproject)
-- [Power Java 책의 이론exercise와 실습exercise 답안](https://github.com/miniplugin/ezen/tree/main/src/exercise)
+- [Power Java 책의 ppt강의용 자바소스 수업에서진행](https://github.com/miniplugin/ezen/tree/main/src/ppt)
+- [Power Java 책의 mini project(학생개인진행) 소스답안](https://github.com/miniplugin/ezen/tree/main/src/miniproject)
+- [Power Java 책의 이론exercise(수업에서진행)와 실습exercise(학생개인진행)소스답안](https://github.com/miniplugin/ezen/tree/main/src/exercise)
 
 - 2차 코스(아래)
 - ![2차코스](./README/course2.png)
 
 ### 참고사항
 - 1차코스 교재의 8장~14장(7일) 사이는 PC용 프로그램 기준으로 클래스를 사용하는 방법을 진행합니다.
-- 스윙(Swing) 라이브러리 기반 개발환경: PC용 프로그램(교재 8장~14장에서 사용,개발 유행은 아님)
+- 스윙(Swing) 라이브러리 기반 개발환경: PC용 프로그램(교재 8장~14장에서 사용,개발트렌드는 아니지만 모바일App제작과 유형이 비슷하다.)
 - 스프링(Spring) 라이브러리 기반 개발환경: 웹(API서버) 프로그램(개발트렌드)
 - 안드로이드X(AndroidX) 라이브러리 기반 개발환경: 모바일 앱(App) 프로그램(개발트렌드)
 - 그래서, 8장~14장(7일)은 빠르게 진행하고 추가로 시간 여유가 있다면 아래 소스도 진행 할 수도 있다.

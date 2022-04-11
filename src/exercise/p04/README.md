@@ -1,32 +1,36 @@
-## Excercise
-#1.  
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.다음과 같은 클래스가 정의되어 있다고 가정하자. 
+이 클래스의 객체를 생성하고 필드를 10과 1.2345로 초기화하며 각 필드의 값을 출력하는 코드를 작성하라.
 ANSWER  
 
 ```
 class NumberBox {
-	public int ivalue;
-	public float fvalue;
+	public int iValue;
+	public float fValue;
 }
 public class NumberBoxTest {
 	public static void main(String[] args) {
 		NumberBox b = new NumberBox();
-		b.ivalue=10;
-		b.fvalue=(float)1.2345;
-		System.out.println(b.ivalue);
-		System.out.println(b.fvalue);
+		b.iValue=10;
+		b.fValue=(float)1.2345;
+		System.out.println(b.iValue);
+		System.out.println(b.fValue);
 	}
 }
 ```
 
-#2.  
+#2.날짜(date)를 클래스명을 MyDate로 작성한다고 가정하자. 
+Data 안에 저장되는 변수 이름과 날짜를 조작하는 메서드 이름을 생각하여 보자.
 ANSWER  
 
 ```
- 변수 int year, int month, int day
- 메소드 이름 void setDate(int y, int m, int d), void printDate()
+ 변수 int year, month, day;
+ 메소드 이름 void MyDate(int year, int month, int day), String toString()
 ```
 
-#3.  
+#3.다음 프로그램에서 잘못된 부분은 무엇인가? 올바르게 수정하시오.
 ANSWER  
  객체가 생성되지 않았다. new를 이용하여서 객체를 생성해준다.
  
@@ -38,7 +42,7 @@ class Rectangle {
 public class Test {
     public static void main(String[] args) {
         Rectangle myRect;
-        myRect = new Rectangle();
+        myRect = new Rectangle();//객체를 생성 한후 객체에 접근할 수 있다.
         myRect.width = 10;
         myRect.height = 20;
         System.out.println("면적은 " + myRect.area());
@@ -46,7 +50,7 @@ public class Test {
 }
 ```
 
-#4.  
+#4.2개의 정수의 합을 구하는 sum()과 3개의 정수의 합을 구하는 sum()을 메서드 오버로딩을 이용하여 정의하라.
 ANSWER  
 
 ```
@@ -54,7 +58,7 @@ class Calculation{
   void sum(int a, int b){System.out.println(a+b);}
   void sum(int a, int b, int c){System.out.println(a+b+c);}
 
-  public static void main(String args[]){
+  public static void main(String[] args){
   Calculation obj=new Calculation();
   obj.sum(10,20,30);
   obj.sum(10,20);

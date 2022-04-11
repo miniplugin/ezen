@@ -1,41 +1,77 @@
-## Excercise
-#1.  
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.다음 질문에 간단히 답하시오.
 ANSWER  
 
 ```
-(1) tf.getText()
-(2) tf.setText("");
-(3) ActionEvent가 발생한다. 
-(4) ItemEvent
-(5) ActionEvent가 발생한다. 
+(1) 텍스트 필드에 들어있는 텍스트를 가져오는 문장을 쓰시오.
+-답변: tf.getText()
+(2) 가장 간단하게 텍스트 필드에 들어있는 텍스트를 지우려면 어떻게 하면 되는가?
+-답변: tf.setText("");
+(3) 텍스트 필드에다 텍스트를 입력하고 [Enter]키를 누르면 어떻게 되는가?
+-댭변: ActionEvent가 발생한다. 
+(4) 사용자가 체크 박스를 선택하였을 경우에 발생하는 이벤트는 무엇인가?
+-답변: ItemEvent
+(5) 라이도 버튼이 선택되면 어떤 이벤트가 발생하는가?
+-답변: ActionEvent가 발생한다. 
 ```
 
-#2.  
+#2.다음의 문장에서 잘못된 곳이 있으면 올바르게 고치시오.
 ANSWER  
 
 ```
-(1) JButton button= newJButton();
-(2) JTextField aTextField = new JTextField("초기텍스트", 20);
-(3) JTextComponent t = new JTextArea(20, 10);
-(4) JTextArea textArea = new JTextArea(20, 30); 
-		new JScrollPane().add(textArea);
-(5) panel.setBorder( BorderFactory.createTitledBorder("크기"));
+(1) JButton *button;
+-답변: JButton button= new JButton();
+(2) aTextField = new TextField("초기텍스트", 20);
+-답변: JTextField aTextField = new JTextField("초기텍스트", 20);
+(3) JTextComponent t = new TextArea(20, 10);
+-답변: JTextComponent t = new JTextArea(20, 10);
+(4) textArea = new JTextArea(20, 30); 
+	textArea.add(new JScrollPane());
+-답변: JTextArea textArea = new JTextArea(20, 30); 
+	new JScrollPane().add(textArea);
+(5) panel.setBorder(new BorderFactory.createTitledBorder("크기"));
+-답변: panel.setBorder( BorderFactory.createTitledBorder("크기"));
 ```
 
-#3.   
+#3.다음은 체크박스에서 발생하는 이벤트를 처리하는 코드이다. 무명 클래스를 사용한다. 빈칸에 적절한 코드를 추가하라.
+
+```
+JCheckBox check = new JCheckBox("CheckBox",false);
+check.addItemListener(________ ItemListener() {
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+		System.out.println("체크상태: " + check.isSelected());
+	}
+});
+```
 ANSWER  
 
 ```
  new 
 ```
 
-#4.   
+#4.다음은 라디오 버튼에서 발생하는 이벤트를 처리하는 코드이다. 현재는 프레임에서 이벤트를 처리한다.
+이 코드를 무명 클래스를 사용하도록 변경하라.
+
+```
+public class MyFrame extends JFrame implements ActionListener{
+	//...	
+	radio.addActionListener(this)
+	@Override
+	public void actionPerformed(ActionEvent e) {
+  	  	System.out.println("Small 크기가 선택되었습니다.");
+	}
+}
+```
 ANSWER  
 
 ```
 public class MyFrame extends JFrame {
-	...	
+	//...	
 	radio.addActionListener(new ActionListener() {
+		@Override
 		public void actionPerformed(ActionEvent e) {
   	  	System.out.println("Small 크기가 선택되었습니다.");
 		}

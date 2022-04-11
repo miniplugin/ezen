@@ -1,50 +1,69 @@
-## Excercise
-#1.   
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.만약 컴퓨터에 CPU가 하나 뿐이라면 어떻게 여러 개의 스레드가 동시에 실행될 수 있는가?
 ANSWER  
 
 ```
 CPU의 시간을 잘게 나누어서 스레드에게 각 슬라이스를 할당한다. 
 ```
 
-#2.   
+#2.스레드를 생성한느 방법을 간단히 설명하고 각 방법의 장점과 단점을 설명하라.
 ANSWER  
 
 ```
-(1) Thread클래스를 상속받아 서브 클래스를 만들고 run()메소드를 오버라이드하는 방법이다. 
+(1) Thread 클래스를 상속받는 방법
+-답변: Thread클래스를 상속받아 서브 클래스를 만들고 run()메소드를 오버라이드하는 방법이다. 
 Thread클래스를 확장하는 방법은 자바에서는 단일 상속만이 가능하므로 다른 클래스를 이미 상속한 클래스는 스레드로 만들 수 없다.
-(2) Runnable인터페이스는 스레드로 실행이 가능한 객체들이 만족하여야하는 인터페이스이다. 
+(2) Runnable 인터페이스를 구현하는 방법
+-답변: Runnable인터페이스는 스레드로 실행이 가능한 객체들이 만족하여야하는 인터페이스이다.(run 메서드가 자동실행된다.)
 Runnable객체는 Thread가 아닌 다른 클래스를 상속 받을 수 있다.
 ```
 
-#3.   
+#3.스레드의 몸체가 들어가는 메서드는 무엇인가?
 ANSWER  
 
 ```
-① run();  
+(1)run() (2)start() (3)stop() (4)main()
+-답변: ① run();  
 ```
 
-#4.   
+#4.스레드의 실행을 시작하는 메서드는?
 ANSWER  
 
 ```
-② start()
+(1)run() (2)start() (3)stop() (4)main()
+-답변: ② start()
 ```
 
-#5.   
+#5.여러 개의 스레드가 동시에 사용하는 코드에서 문제가 발생하지 않도록 앞에 놓아야 하는 키워드는?
 ANSWER  
 
 ```
+(1)run (2)synchronized (3)stop (4)lock
 ② synchronized 
 ```
 
-#6.   
+#6.wait()와 notify()는 어떤 경우에 사용하는가?
 ANSWER  
 
 ```
 wait()는 공유 자원을 차지할 때, notify()는 공유 자원을 해제할 때 사용한다. 
 ```
 
-#7.   
+#7.다음은 스레드를 생성하여 실행하는 코드이다. 비어 있는 부분에 어떤 코드를 넣어야 할까?
+
+```
+class Test implements Runnable {
+	public static void main(String[] args) {
+		//여기에 스레드를 생성하는 코드를 넣는다.
+	}
+	@Override
+	public void run() {
+		//자동실행할 코드 추가
+	}
+}
+```
 ANSWER  
 
 ```
@@ -53,14 +72,29 @@ Thread t = new Thread(run);
 t.start();
 ```
 
-#8.   
+#8.위 스레드를 생성하고 실행하는 문자를 1줄로 표시하면 무엇인가?
 ANSWER  
 
 ```
 ③new Thread(new Test()).start();
 ```
 
-#9.   
+#9.다음 프로그램의 출력은?
+
+```
+public class Test implements Runnable {
+	public static void main(String[] args) {
+		Test t = new Test();
+		Thread x = new Thread(t);
+		x.start();
+	}
+	@Override
+	public void run() {
+		for(int i=0;i<3;i++)
+			System.out.print(i + "..");
+	}
+}
+```
 ANSWER  
 
 ```

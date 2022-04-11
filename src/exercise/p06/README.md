@@ -1,17 +1,32 @@
-## Excercise
-#1.  
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.다음과 같은 클래스 정의에 대하여 답하라.
+
+```
+class Student {
+	private int number;
+	protected String name;
+}
+public class GraduateStudent extends Student {
+	public String lab;
+}
+```
 ANSWER  
 
 ```
-(1) Student, GraduateStudent
-(2) 
+(1) 위의 코드에서 부모 클래스는 (     )이고, 자식 클래스는 (             ) 이다.
+-답변: Student, GraduateStudent
+(2) 위의 클래스 관계를 나타내는 UML 도형을 그려라. (클래스 다이어그램으로 대체)
+-답변
 Student
 -number: int
 +name : String
 
 GraduateStudent
 +lab : String
-(3) 
+(3) 각 필드에 대한 접근자와 설정자를 작성하라.(Getter,Setter로 자동생성)
+-답변
 class Student {
        public int getNumber() {
 		return number;
@@ -40,7 +55,8 @@ public class GraduateStudent extends Student {
 
 	public String lab;
 }
-(4)
+(4) 생성자를 추가하여 보라. 자식 클래스의 생성자에서 부모 클래스의 생성자를 명시적으로 호출하게 하라.(자동완성 사용)
+-답변
 class Student {
 	public Student(int number, String name) {
 		super();
@@ -61,52 +77,120 @@ public class GraduateStudent extends Student {
 	...
 	public String lab;
 }
-(5) ① private 멤버는 접근할 수 없다. 
+(5) GraduateStudent s = new GraduateStudent(0, "name", "lab");와 같이 객체를 생성하였다고 하자.
+다음 중 필드를 잘못 접근한 것은?
+(1) s.number = 10;
+(2) s.lab = "Image Processing Lab";
+(3) s.name = "홍길동";
+-답변
+① private 멤버는 접근할 수 없다. 이렇게 Setter 메서드로 접근한다. s.setNumber(10);
 ```
 
-#2.  
+#2.다음 코드의 실행 결과는?
 ANSWER  
 
 ```
+class A {
+	public A() { System.out.println("클래스 A 생성자"); }
+}
+class B extends A{
+	public B() { System.out.println("클래스 B 생성자"); }
+}
+class C extends B {
+	public C() { System.out.println("클래스 C 생성자"); }
+}
+public class Test {
+	public static void main(String[] args) {
+		C c = new C();
+	}
+}
+-답변
 클래스 A 생성자
 클래스 B 생성자
 클래스 C 생성자
 ```
 
-#3.  
+#3.다음 코드에 대하여 질문에 답하라
 ANSWER  
 
 ```
-(1) y, z, w, u
-(2) ②, 자식 객체가 부모 객체보다 크기 때문에 B 참조 변수로 A 객체를 가리킬 수는 없다. 
+class A {
+	private int x;
+	protected int y;
+	int z;
+	public int w;
+}
+class B extends A{
+	public int u;
+}
+
+(1) 위의 코드에서 B obj = new B(); 문장을 이용하여 객체 obj를 생성하였다고 하자.
+obj를 통하여 사용할 수 있는 필드는 어떤 것들인가?
+-답변: y, z, w, u
+(2) 다음 중 잘못된 문자은 무엇인가? 그 이유는?
+ 1) A obj = new B();
+ 2) B obj = new A();
+-댭변: ②, 자식 객체가 부모 객체보다 크기 때문에 B 참조 변수로 A 객체를 가리킬 수는 없다. 
 ```
 
-#4.  
+#4.다음 코드에는 잘못된 부분이 있다. 올바르게 수정하라.
 ANSWER  
 
 ```
- 기본 생성자가 정의되어 있지 않아서 컴파일 오류가 발생한다. 
+class A {
+	public A(char c) {  }
+}
+class B extends A{
+	public B(char c) {  }
+}
+-답변
+ 기본 생성자가 정의되어 있지 않아서 컴파일 오류가 발생한다. public A() {} 추가
 ```
 
-#5.  
+#5.다음 코드에 대하여 질문에 답하라.
+
+```
+class A {
+	public void print() { System.out.println("A"); }
+}
+class B extends A{
+	public void print() { System.out.println("B"); }
+}
+```
 ANSWER  
 
 ```
-(1) B
-(2) B
-(3) 
+(1) 다음과 같은 코드를 실행한 결과는?
+B obj = new B();
+obj.print();
+-답변: B
+(2) 다음과 같은 코드를 실행한 결과는?
+A obj = new B();
+obj.print();
+-답변: B
+(3) B의 print() 안에서 A의 print()도 호출하려면 어떻게 하면 되는가?
 class B extends A {
 	public void print() { 
 		super.print();
-		System.out.println("B");     }
+		System.out.println("B");     
+	}
 }
 ```
 
-#6.  
+#6.다음 코드에서 잘못된 부분은 어디일까?
 ANSWER  
 
 ```
- 추상 클래스 안의 메소드를 클래스 B에서 구현하지 않았다. 
+abstract class A {
+	public void print() { 
+		public abstract void print();
+		public void display();
+	}
+}
+class B extends A{
+}
+-답변
+ 추상 클래스 안의 메서드를 상속한 클래스 B에서 구현하지 않았다. 
 ```
 
 ## Program Exercise

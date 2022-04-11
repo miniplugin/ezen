@@ -1,12 +1,14 @@
-## Excercise
-#1.  
+- 자료출처: Power Java Compact(출판사:인피니트 북스, 저자:천인국)
+
+## Exercise
+#1.다음의 작업을 수행하는 문장을 작성하라.
 ANSWER  
 
 ```
-(1) 
+(1) 20 이상이고 60 미만이면 count를 1씩 증가한다.
 if( count >= 20 && count < 60 )
 	count++;
-(2) 
+(2) x와 y 중에서 큰 값을 max에 저장하고 작은 값을 min에 저장한다.
 if( x > y ){
 	max = x;
 	min = y;
@@ -15,87 +17,134 @@ else {
 	max = y;
 	min = x;
 }
-(3) 
+(3) x가 1부터 20 사이에 있으면 x의 값을 y에 대입한다.
 if( x >=1 && x <= 20 )
 	y = x;
 ```
 
-#2.    
+#2.다음 프로그램의 출력은 무엇인가?
 ANSWER  
 
 ```
+for(int i=0;i<3;i++) {
+	switch(i) {
+		case 0: break;
+		case 1: System.out.print("one ");
+		case 2: System.out.print("two ");
+		case 3: System.out.print("three ");
+	}
+}
+ System.out.println("done");
+-답변
  one two three two three done
 ```
 
-#3.  
+#3.다음 코드를 실행하였을 경우, 생성되는 출력을 쓰시오. 들여쓰기를 올바르게 수정하시오.
 ANSWER  
 
 ```
+int age = 66;
+if(age > 20)
+	if(age < 65)
+		System.out.println("1번 그룹");
+else
+	System.out.println("2번 그룹");
+-답변
  2번 그룹
 ```
 
-#4.  
+#4.다음 코드를 실행햐였을 경우, 어떤 일이 발생하는가?
 ANSWER  
 
 ```
- 컴파일 오류가 발생한다. 변수 i는 for 루프 외부에서 사용할 수 없다. 
+for(int i=0;i<10;i++) {
+	System.out.print(i + " ");
+}
+System.out.println(i);
+-답변
+ 컴파일 오류가 발생한다. 변수 i는 for 루프구문 외부에서 사용할 수 없다. 
 ```
 
-#5.  
+#5.다음 문장의 오류를 찾아서 수정하라. 오류가 없을 수도 있고, 2개 이상의 오류가 있을 수도 있다.
+ 문법적인 오류뿐만 아니라 논리적인 오류도 지적하라.
 ANSWER  
 
 ``` 
-(1) 
-if( age > 0 && age < 18 )
+(1) if( age > 0 && age < 18 )
 	System.out.println("청소년");
-(2) 
-if( x == 0 )
+-답변
+ 구문오류: if( age > 0 && age < 18 )
+	
+(2) if( x = 0 )
 	System.out.println("x는 0이다.");
+-답변
+ 구문오류: int x = 0;
+	  if( x == 0 )
 ```
 
-#6.  
+#6.다음의 프로그램에서 생성되는 출력결과는 무엇인가?
 ANSWER  
 
 ```
+int i = 0;
+while(i<10) {
+	System.out.println("i="+i);
+	i += 3;
+}
+-답변
  i=0
  i=3
  i=6
  i=9
 ```
 
-#7.  
+#7.다음의 수학식을 계산하는 코드를 작성하라.
 ANSWER  
 
 ```
+시그마 기호를 사용한 i가 1부터 30까지 반복되면서, i의 제곱+1 계산을 sum 변수에 누적해서 더하는 프로그램.
+-답변
 int sum=0, i;
 for(i = 1; i <= 30; i++)
 	sum += i*i+1;
 ```
 
-#8.  
+#8.다음 중에서 올바른 배열 선언을 모두 선택하시오.
 ANSWER  
 
 ```
+(1) int[] myScores;
+(2) char[] myChars;
+(3) int[6] myScores;
+(4) Dog myDogs[];
+(5) Dog myDogs[7];
+-답변
  ①,②,④
 ```
 
-#9.  
+#9.다음과 같은 배열을 생성하는 문장을 작성하시오.
 ANSWER  
 
 ```
- (1) int [] studentNumbers = new int[30];
- (2) double [] values = { 1.2, 3.3, 6.7 };
+ (1) 30개의 요소를 가지는 int형 배열 studentNumbers
+ -답변
+ int [] studentNumbers = new int[30];
+ (2) 요소로 1.2, 3.3, 6.7 을 가지는 double형 배열 values
+ -답변
+ double [] values = { 1.2, 3.3, 6.7 };
 ```
 
-#10.  
+#10.int[] employees = new int[5];와 같은 배열 선언이 있다고 하자.
 ANSWER  
 
 ```
- (1) 0에서 4
- (2) ArrayIndex 예외가 발생한다. 
+ (1) 유효한 인덱스의 범위는?
+ -답변: 0에서 4
+ (2) 만약 employees[5]와 같이 요소에 접근하였다면 어떤 일이 발생하는가?
+ -답변: ArrayIndex 예외가 발생한다. 
 ```
 
-#11.  
+#11.double형 배열 values의 각 요소를 0으로 초기화하는 문장을 작성하라
 ANSWER  
 
 ``` 
