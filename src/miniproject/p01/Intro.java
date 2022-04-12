@@ -1,5 +1,10 @@
 package miniproject.p01;
-
+/**
+ * cmd 창에서 컴파일: javac -d . Intro.java -encoding UTF-8
+ * cmd 창에서 실행: java miniproject.p01.Intro
+ * @author kimilguk
+ *
+ */
 public class Intro {
 
 	public static void main(String[] args) {
