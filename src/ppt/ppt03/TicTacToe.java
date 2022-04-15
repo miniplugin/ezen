@@ -40,7 +40,7 @@ public class TicTacToe {
 					if (board[i][j] == ' ')
 						break;
 				}
-				if(j>=3) j=2;
+				if(j>=3) j=2;//교재에 없는 내용 추가
 				if (board[i][j] == ' ') {
 					break;
 				}
