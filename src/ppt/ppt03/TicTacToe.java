@@ -30,17 +30,20 @@ public class TicTacToe {
 			if (board[x][y] != ' ') {
 				System.out.println("잘못된 위치입니다. ");
 				continue;
-			} else
+			} else {
 				board[x][y] = 'X';
-
+			}
 
 			int i = 0, j = 0;
 			for (i = 0; i < 3; i++) {
-				for (j = 0; j < 3; j++)
+				for (j = 0; j < 3; j++) {
 					if (board[i][j] == ' ')
 						break;
-				if (board[i][j] == ' ')
+				}
+				if(j>=3) j=2;
+				if (board[i][j] == ' ') {
 					break;
+				}
 			}
 			if (i < 3 && j < 3)
 				board[i][j] = 'O';
