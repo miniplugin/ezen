@@ -70,7 +70,7 @@ System.out.println(i);
 ANSWER  
 
 ``` 
-(1) if( age > 0 && age < 18 )
+(1) if( age > 0 age < 18 )
 	System.out.println("청소년");
 -답변
  구문오류: if( age > 0 && age < 18 )

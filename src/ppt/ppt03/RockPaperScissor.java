@@ -35,9 +35,9 @@ public class RockPaperScissor {
 		//조건문 시작
 		if(user == computer) {//비겼을 경우 구현내용
 			System.out.println("컴퓨터는 " + result(computer) + " 사용자는 " + result(user) + " 로 비겼습니다.");
-		} else if((computer+1)%3 == user) { //컴퓨터가 이겼을 경우 구현내용
+		} else if((computer+1)%3 == user) { //사용자가 이겼을 경우 구현내용
 			System.out.println("컴퓨터는 " + result(computer) + " 사용자는 " + result(user) + " 로 사용자가 이겼습니다.");
-		} else {//사용자가 이겼을 경우 구현내용
+		} else {//컴퓨터가 이겼을 경우 구현내용
 			System.out.println("컴퓨터는 " + result(computer) + " 사용자는 " + result(user) + " 로 컴퓨터가 이겼습니다.");
 		}
 		
