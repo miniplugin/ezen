@@ -19,7 +19,7 @@ import java.util.Scanner;
  * @author 402_S
  *
  */
-public class ScissorRockPaper {
+public class RockPaperScissor {
 	//클래스변수(전역,멤버)
 	final static String SCISSOR = "가위(0)";//상수변수를 만들 때 final static 한 쌍으로 사용.
 	final static String ROCK = "바위(1)";
