@@ -15,9 +15,49 @@ class Circle {//클래스 생성 주의, 클래스명 시작문자는 반드시 
 	}
 }
 
+class Dog extends Animal {
+
+	@Override
+	public void speak(String name) {
+		// TODO Auto-generated method stub
+		//super.speak(name);
+		System.out.println(name + "는 멍멍");
+	}
+}
+class Cat extends Animal {
+
+	@Override
+	public void speak(String name) {
+		// TODO Auto-generated method stub
+		//super.speak(name);
+		System.out.println(name + "는 야용");
+	}
+}
+abstract class Animal {
+	private String name;
+	public void speak(String name) {
+		
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}
+
 public class Basic02_ClassMethod {
 
 	public static void main(String[] args) {
+		Dog dog = new Dog();//런타임(동적으로)시 힙(Heap)메모리 영역에 생성 / 상수(static) 메모리영역과 비교 
+		Cat cat = new Cat();
+		//dog.name = "흰둥이";
+		//dog.speak(dog.name);
+		dog.setName("개");
+		dog.speak(dog.getName());
+		cat.setName("고양이");
+		cat.speak(cat.getName());
 		/*
 		 * circle은 우리가 지정한 클래스 이름인거고, 
 		 * Circle c는 클래스 이름 + c(객체이름-메모리에등록된이름) =  new 클래스네임(반지름값 5) 
