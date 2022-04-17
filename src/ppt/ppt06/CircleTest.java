@@ -8,8 +8,8 @@ class Circle2 extends Shape {
 
 	public Circle2(int radius) {
 		this.radius = radius;
-		x = 0;
-		y = 0;
+		super.x = 0;
+		super.x = 0;
 	}
 
 	double calcArea() {

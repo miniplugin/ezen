@@ -32,12 +32,13 @@ class Cat extends Animal {
 		//super.speak(name);
 		System.out.println(name + "는 야용");
 	}
+	
 }
 abstract class Animal {
 	private String name;
-	public void speak(String name) {
+	public abstract void speak(String name);// {
 		
-	}
+	//}
 	public String getName() {
 		return name;
 	}

@@ -14,10 +14,12 @@ public class Basic01_HelloWorld {
 		//변수는 크게 기본형과 참조형(클래스)로 구분한다.
 		//기본형은 숫자(int,double,long,float)
 		int number1 = 1;//정수
-		long number2 = 1l;//큰정수
+		Integer num1 = new Integer(100);
+		Integer num2 = 100;
+		long number2 = 7000001000000L;//큰정수
 		double number3 = 1d;//실수(소수점표시)
 		float number4 = 1f;//큰실수
-		System.out.println("숫자형 : int="+number1+" long="+number2+" double="+number3+" float="+number4);
+		System.out.println("숫자형 : int="+num2+" long="+number2+" double="+number3+" float="+number4);
 		//기본형 문자 char, 논리값 boolean
 		char english = 'a';//단 따옴표만 가능하다.
 		boolean logic = true;

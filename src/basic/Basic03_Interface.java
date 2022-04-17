@@ -9,6 +9,7 @@ package basic;
 interface CalcAddSub {//더하기,빼기 명세서
 	void add(double dx, double dy);
 	void sub(double dx, double dy);
+	default void defaultCalc( ) { System.out.println("인터페이스에서는 default 메서드 구현만 가능하다");}
 }
 interface CalcMulDiv {//곱하기,나누기 명세서
 	void mul(double dx, double dy);
@@ -51,6 +52,7 @@ public class Basic03_Interface {
 		allCalc.sub(10, 10);//동적으로 묶이는방식을 동적바인딩이라고 함.
 		allCalc.mul(5, 5);
 		allCalc.div(5, 5);
+		allCalc.defaultCalc();
 	}
 
 }

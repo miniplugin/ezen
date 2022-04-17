@@ -27,5 +27,7 @@ public class Basic10_FileInputOutput {
 			//read()로 읽어들인 바이트문자를 manifest_bak.txt파일이 생성되면서 내용이 저장(아래)
 			fileOutputStream.write(byte_content);
 		}
+		fileInputStream.close();
+		fileOutputStream.close();
 	}
 }
