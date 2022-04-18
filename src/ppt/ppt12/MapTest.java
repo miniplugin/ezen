@@ -1,4 +1,5 @@
 ﻿package ppt.ppt12;
+import java.lang.reflect.Field;
 import java.util.*;
  
 class Student {
@@ -10,11 +11,31 @@ class Student {
              this.name = name;
        }
  
-       public String toString() {
+       public Student() {
+			// TODO Auto-generated constructor stub
+		}
+
+		public int getNumber() {
+			return number;
+		}
+	
+		public void setNumber(int number) {
+			this.number = number;
+		}
+	
+		public String getName() {
+			return name;
+		}
+	
+		public void setName(String name) {
+			this.name = name;
+		}
+
+	public String toString() {
              return name;
        }
 }
- 
+
 public class MapTest {
        public static void main(String[] args) {
              Map<String, Student> st = new HashMap<String, Student>();
@@ -35,8 +56,10 @@ public class MapTest {
              // 모든 항목을 방문한다.
              for (Map.Entry<String, Student> s : st.entrySet()) {
                     String key = s.getKey();
-                    Student value = s.getValue();
-                    System.out.println("key=" + key + ", value=" + value);
+                    Student student = s.getValue();//객체생성 출력시 toString 메서드 자동실행
+                    int number = student.getNumber();
+                    String name = student.getName();
+                    System.out.println("key=" + key + ", name=" + name+ ", number=" + number);
              }
        }
 }

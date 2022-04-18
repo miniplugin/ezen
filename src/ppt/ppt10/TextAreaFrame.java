@@ -15,11 +15,13 @@ public class TextAreaFrame extends JFrame implements ActionListener {
  
              textArea = new JTextArea(10, 30);
              textArea.setEditable(false);
+             JScrollPane scrollPane = new JScrollPane(textArea);
 
              add(textField, BorderLayout.NORTH);
-             add(textArea, BorderLayout.CENTER);
- 
-             pack();
+             //add(textArea, BorderLayout.CENTER);
+             add(scrollPane, BorderLayout.CENTER);
+             //setSize(300, 200);
+             pack();//위 프레임 사이즈 대신에 내용만큼 자동으로 크기를 조정한다.
              setVisible(true);
        }
  
