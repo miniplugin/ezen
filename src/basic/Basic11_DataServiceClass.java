@@ -1,7 +1,9 @@
 package basic;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 데이터자료형 클래스와 서비스클래스에 대해서 학습(메소드의 다형성)
@@ -32,11 +34,12 @@ class MemberVO {//VO는 ValueObject 의 약자로 데이터값만 모아놓은 �
 	public void setPhoneNum(String phoneNum) {
 		this.phoneNum = phoneNum;
 	}
+	/*
 	@Override
 	public String toString() {
 		return "디버그용 MemberVO [name=" + name + ", age=" + age + ", phoneNum=" + phoneNum + "]";
 	}
-	
+	*/
 }
 
 class MemberService {//이 서비스 클래스에서는 회원출력에 관련된 메서드를 모아 놓습니다.(아래)
@@ -74,17 +77,39 @@ public class Basic11_DataServiceClass {
 	memberVO3.setName("각시탈");
 	memberVO3.setAge(28);
 	memberVO3.setPhoneNum("222-2222-2222");
+
 	//위 각각 3개의 레코드를 1군데 담을 배열 클래스오브젝트를 하나 생성(아래)
 	MemberVO[] memberArray = new MemberVO[3];
 	memberArray[0] = memberVO;
 	memberArray[1] = memberVO2;
 	memberArray[2] = memberVO3;
+	System.out.println(memberArray);
 	//위 처럼 배열 내에 배열로 처리 할 수도 있으나, 주로 아래 처럼 리스트 클래스를 사용한다.
 	List<MemberVO> memberList = new ArrayList<MemberVO>();
 	memberList.add(memberVO);
 	memberList.add(memberVO2);
 	memberList.add(memberVO3);
-
+	System.out.println(memberList);
+	//키:값 형태의 데이터베이스 자료와 호환되는 방식
+	Map<String,Object> memberMap1 = new HashMap<String,Object>();
+	Map<String,Object> memberMap2 = new HashMap<String,Object>();
+	Map<String,Object> memberMap3 = new HashMap<String,Object>();
+	memberMap1.put("name", "홍길동");
+	memberMap1.put("age", 45);
+	memberMap1.put("phoneNum", "000-0000-0000");
+	memberMap2.put("name", "성춘향");
+	memberMap2.put("age", 18);
+	memberMap2.put("phoneNum", "111-1111-1111");
+	memberMap3.put("name", "각시탈");
+	memberMap3.put("age", 28);
+	memberMap3.put("phoneNum", "222-2222-2222");
+	//List <HashMap<String,Object>> memberMapList = new ArrayList<HashMap<String,Object>>();
+	List<Object> memberListMap = new ArrayList<Object>();
+	memberListMap.add(memberMap1);
+	memberListMap.add(memberMap2);
+	memberListMap.add(memberMap3);
+	System.out.println(memberListMap);
+	
 	MemberService memberService = new MemberService();//자바 오브젝트객체 생성하는 방법\
 	//아래처럼 메소드명이 동일하고 로드된 파라미터가 틀린 경우를 메소드 오버로드라고 한다.(메소드의 다형성)
 	memberService.printMember(memberArray);//서비스클래스의 메서드호출
