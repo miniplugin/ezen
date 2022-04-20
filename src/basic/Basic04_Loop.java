@@ -1,4 +1,9 @@
 package basic;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 /**
  * 반복구문에 대해서 학습(제어구문중 향상된 for문 사용)
  * @author kimilguk
@@ -9,7 +14,9 @@ public class Basic04_Loop {
 	public static void main(String[] args) {
 		// 반복문중에 for문
 		// 메서드에서 사용하는 변수 아래 2줄
-		int[] numbers = {11,21,31,41,51,61,71,81,91,101};//배열변수 선언
+		Integer[] numbers = {11,21,31,41,51,61,71,81,91,101};//배열변수 선언
+		Arrays.sort(numbers, Collections.reverseOrder());
+		System.out.println(numbers[0]+"~"+numbers[9]);
 		int cnt;//반복횟수 카운트(세는)하는 역할 변수 선언
 		//for문(반복의시작값정의;반복의종료값정의;반복할때 증가하는값) { 반복할때 구현내용 }
 		for(cnt=0;cnt<10;cnt++) {//cnt++ => cnt=cnt+1; 의미 1씩 증가하는의미
