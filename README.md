@@ -47,6 +47,7 @@
  - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
 
 - 스프링부트에서 클래스를 거쳐서 저장한 테이블내용.(아래)
+- [LocalDateTime 클래스 시간이 사용된 스프링소스 링크](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/java/com/herokuapp/kimilgukboot2/domain/BaseTimeEntity.java)
 - ![PgAdmin프로그램으로 접속](./README/db_save.png)
 
 ### 학생PC 준비사항
