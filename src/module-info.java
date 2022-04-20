@@ -6,4 +6,5 @@
 module ezen {
 	requires org.json;
 	requires java.desktop;
+	requires java.sql;
 }

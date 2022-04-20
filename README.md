@@ -46,6 +46,9 @@
  */
  - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
 
+- 스프링부트에서 클래스를 거쳐서 저장한 테이블내용.(아래)
+- ![PgAdmin프로그램으로 접속](./README/db_save.png)
+
 ### 학생PC 준비사항
 #### 대면수업 시 프로젝트 내용이 자세히 보이지 않을 때 교사PC 화면공유 무료 프로그램 활용(아래)
 - https://www.freeconferencecall.com/ 다운로드: https://drive.google.com/file/d/1ZGj8EbbzSkqJYDkA-rnHoqLXYhLjeFN1/view?usp=sharing

@@ -1,4 +1,10 @@
 package basic;
+
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+
 /**
  * 클래스와 객체의 관계 및 상속에 대해서 학습(객체의 다형성)
  * @author kimilguk
@@ -77,6 +83,28 @@ public class Basic02_ClassMethod {
 		//추상클래스란 무엇인지 와 클래스상속 및 메서드 오버라이드사용(아래)
 		GraphicObject graphicObject = new Triangle();
 		graphicObject.draw();//클래스형 변수명을 지정할때, 카멜표기(낙타등)를 적용.
+		System.out.println(Calendar.YEAR+"."+Calendar.MONTH+"."+Calendar.DATE);
+		Calendar today = Calendar.getInstance();
+        int year = today.get(Calendar.YEAR);
+        int month = today.get(Calendar.MONTH)+1;//0부터 시작 11까지
+        int day = today.get(Calendar.DATE);
+        int hour12 = today.get(Calendar.HOUR);
+        int hour24 = today.get(Calendar.HOUR_OF_DAY);
+        int minute = today.get(Calendar.MINUTE);
+        int second = today.get(Calendar.SECOND);
+        System.out.println(year+"."+month+"."+day);
+        System.out.println(hour12+"."+minute+"."+second);
+        //고전적인 Date 클래스와 Calendar 클래스를 사용하지 않고, 아래 최신클래스 사용 
+        //자바8부터는 LocalDate + LocalTime = LocalDateTime 사용
+        LocalDateTime dateTime = LocalDateTime.now();
+        System.out.println("현재시간 기본형태: "+dateTime);
+        String timeFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSSSSS").format(dateTime);//실제 DB에 저장될 때는 아래값으로 저장된다.
+        System.out.println("변환: "+timeFormat);
+        //1970년 1월 1일 1부터 현재 까지의 밀리초단위 시간사용(아래)
+        Long miliSecond = System.currentTimeMillis();
+        System.out.println("타임스템프 기본형태: "+miliSecond);
+        Timestamp timestamp = new Timestamp(miliSecond);//현재시간을 이쁘게 변환
+        System.out.println("변환: "+timestamp);
 	}
 }
 //추상클래스에 대한 연습(아래)
