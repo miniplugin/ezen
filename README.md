@@ -46,6 +46,9 @@
  */
  - 앞으로 사용할 프로젝트명은 ezen 으로 한다.
 
+### 수업 참고 자료
+- 구름코딩테스트 순서도: [구글다이어그램사용: 구글로그인필요](https://drive.google.com/drive/folders/1854Nmo6cAfqdQlzEhx53sxCjr7mHN-Cg?usp=sharing)
+- 구름코딩테스트 소스: [자바소스: 위 다이어그램번호와 매칭시켜서 공부](https://github.com/miniplugin/JavaLang/tree/master/project)
 - 스프링부트에서 클래스를 거쳐서 저장한 테이블내용.(아래)
 - [LocalDateTime 클래스 시간이 사용된 스프링소스 링크](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/java/com/herokuapp/kimilgukboot2/domain/BaseTimeEntity.java)
 - ![PgAdmin프로그램으로 접속](./README/db_save.png)
