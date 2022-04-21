@@ -109,6 +109,7 @@ public class MyFrame extends JFrame {// implements ActionListener {
 			super.paintComponent(g);
 			//g.setColor(Color.BLUE); // 파란색 선택
 			g.drawRect(0, 0, 100, 100);
+			g.drawArc(0, 0, 100, 100, 90, 180);
 		}
 	}
 }
