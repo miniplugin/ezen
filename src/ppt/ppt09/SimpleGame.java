@@ -19,8 +19,6 @@ public class SimpleGame extends JFrame {
 	int n1, n2, n3;
 	JButton jButton1, jButton2, jButton3;
 	
-	
-	
 	public SimpleGame() throws HeadlessException {
 		// 디자인 객체 생성
 		setSize(300, 150);
