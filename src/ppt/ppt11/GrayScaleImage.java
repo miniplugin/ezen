@@ -24,6 +24,7 @@ public class GrayScaleImage extends JFrame {
 			width = image.getWidth();
 			height = image.getHeight();
 			//Coordinate out of bounds 좌표크기를 벗어난다는 예외가 발생하면 width, height 위치를 바꾼다.
+			//이유는 정사각형일 때만 모든 좌표의 색상을 회색으로 변경할 수 있다.
 			for (int r = 0; r < width; r++) {
 				for (int c = 0; c < height; c++) {
 					Color color = new Color(image.getRGB(r, c));
