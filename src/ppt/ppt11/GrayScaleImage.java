@@ -18,14 +18,14 @@ public class GrayScaleImage extends JFrame {
 
 	public GrayScaleImage() {
 		try {
-			File input = new File("d://Lenna.png");
+			File input = new File("./src/miniproject/p14/image/alien.png");
 
 			image = ImageIO.read(input);
 			width = image.getWidth();
 			height = image.getHeight();
 
-			for (int r = 0; r < height; r++) {
-				for (int c = 0; c < width; c++) {
+			for (int r = 0; r < width; r++) {
+				for (int c = 0; c < height; c++) {
 					Color color = new Color(image.getRGB(r, c));
 					int red = (int) (color.getRed());
 					int green = (int) (color.getGreen());
@@ -37,14 +37,14 @@ public class GrayScaleImage extends JFrame {
 				}
 			}
 
-			File ouptut = new File("output.png");
+			File ouptut = new File("./src/miniproject/p14/image/output.png");
 			ImageIO.write(image, "png", ouptut);
 			add(new MyPanel());
 			pack();
 			setVisible(true);
 
 		} catch (Exception e) {
-			System.out.println("이미지 읽기 실패!");
+			System.out.println("이미지 읽기 실패!" + e.getMessage());
 		}
 
 	}
