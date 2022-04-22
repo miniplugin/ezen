@@ -23,7 +23,7 @@ public class GrayScaleImage extends JFrame {
 			image = ImageIO.read(input);
 			width = image.getWidth();
 			height = image.getHeight();
-
+			//Coordinate out of bounds 좌표크기를 벗어난다는 예외가 발생하면 width, height 위치를 바꾼다.
 			for (int r = 0; r < width; r++) {
 				for (int c = 0; c < height; c++) {
 					Color color = new Color(image.getRGB(r, c));
