@@ -1,4 +1,4 @@
-﻿package ppt.ppt09;
+package ppt.ppt09;
 import javax.swing.*;
 
 import java.awt.event.*;

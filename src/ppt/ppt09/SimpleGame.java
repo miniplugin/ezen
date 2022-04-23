@@ -1,19 +1,20 @@
-﻿package ppt.ppt09;
+package ppt.ppt09;
+
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.HeadlessException;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ContainerAdapter;
-import java.awt.event.ContainerEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+/**
+ * javac error illegal character ' ufeff'
+ * 같은 UTF-8 문서라도 BOM(Byte Order Marker)를 지워야 정상 컴파일 된다. 
+ * @author kimilguk
+ *
+ */
 public class SimpleGame extends JFrame {
 	//클래스변수
 	int n1, n2, n3;
