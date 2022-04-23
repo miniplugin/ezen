@@ -1,12 +1,14 @@
 ﻿package ppt.ppt12;
 import java.lang.reflect.Field;
 import java.util.*;
+import java.util.Map.Entry;
+import java.util.stream.Collectors;
  
 class Student {
-       int number;
+       Integer number;
        String name;
  
-       public Student(int number, String name) {
+       public Student(Integer number, String name) {
              this.number = number;
              this.name = name;
        }

@@ -2,10 +2,10 @@
 import java.util.*;
  
 class Student2 implements Comparable<Student2> {
-       int number;
+	   Integer number;
        String name;
  
-       public Student2(int number, String name) {
+	public Student2(Integer number, String name) {
              this.number = number;
              this.name = name;
        }
@@ -15,7 +15,8 @@ class Student2 implements Comparable<Student2> {
        }
 	@Override
 	public int compareTo(Student2 o) {
-		return o.number - number;
+		System.out.println(o.toString() + name + "=" + (number - o.number));
+		return o.number - number;//비교조건 양수면 그대로, 음수면 자리를 바꾼다.
 	}
 }
  
@@ -28,7 +29,8 @@ public class SortTest {
         };
         List<Student2> list = Arrays.asList(array);
         Collections.sort(list);
-
         System.out.println(list);
+        int index = Collections.binarySearch(list, new Student2(1, null));
+        System.out.println(list.get(index));
     }
 }
