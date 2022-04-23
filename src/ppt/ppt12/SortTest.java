@@ -15,8 +15,9 @@ class Student2 implements Comparable<Student2> {
        }
 	@Override
 	public int compareTo(Student2 o) {
-		System.out.println(o.toString() + name + "=" + (number - o.number));
-		return o.number - number;//비교조건 양수면 그대로, 음수면 자리를 바꾼다.
+		//System.out.println(o.toString() + name + "=" + (number - o.number));
+		//return o.number - number;//비교조건 양수면 그대로, 음수면 자리를 바꾼다.
+		return o.name.compareTo(name);
 	}
 }
  
@@ -30,7 +31,8 @@ public class SortTest {
         List<Student2> list = Arrays.asList(array);
         Collections.sort(list);
         System.out.println(list);
-        int index = Collections.binarySearch(list, new Student2(1, null));
+        //int index = Collections.binarySearch(list, new Student2(1, null));
+        int index = Collections.binarySearch(list, new Student2(null, "김철수"));
         System.out.println(list.get(index));
     }
 }
