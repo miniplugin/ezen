@@ -27,6 +27,7 @@ public class CarGame extends JFrame {
 					e.printStackTrace();
 				}
 			}
+			System.out.println("무한");
 		}
 	}
 
@@ -39,9 +40,9 @@ public class CarGame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(null);
 
-		(new MyThread("car1.gif", 100, 0)).start();
-		(new MyThread("car2.gif", 100, 50)).start();
-		(new MyThread("car3.gif", 100, 100)).start();
+		(new MyThread("./src/ppt/ppt14/car.png", 100, 0)).start();
+		(new MyThread("./src/ppt/ppt14/car.png", 100, 50)).start();
+		(new MyThread("./src/ppt/ppt14/car.png", 100, 100)).start();
 		setVisible(true);
 	}
 

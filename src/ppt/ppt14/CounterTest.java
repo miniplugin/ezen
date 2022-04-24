@@ -26,6 +26,7 @@ class MyThread extends Thread {
 				sharedCounter.printCounter();
 			try {
 				sleep((int) (Math.random() * 2));
+				//sleep(100);
 
 			} catch (InterruptedException e) {	}
 			i++;
