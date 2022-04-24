@@ -19,6 +19,7 @@
 - [자바리뷰학습자료 강의용소스 링크](https://github.com/miniplugin/ezen/tree/main/src/basic)
 - [구름 코딩테스트 링크 응시환경 체험하기](https://devth.goorm.io/)
 - [13장 버퍼와 파일업로드 웹에서 사용하는 곳](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/java/com/herokuapp/kimilgukboot2/util/FileUtilsApi.java)
+- [14장의 동시작업의 문제점 웹에서 보완하는 방법:트랜잭션사용](https://github.com/miniplugin/kimilguk-spring5/blob/master/src/main/java/com/edu/service/BoardServiceImpl.java)
 - [14장의 싱크로나이즈 동기화 웹에서 사용하는 곳](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/resources/static/js/app/index.js)
 - [14장의 노티파이 알림 앱에서 사용하는 곳](https://github.com/miniplugin/SingleDiary/blob/dev_api/app/src/main/java/org/techtown/diary/Fragment1.java)
 
