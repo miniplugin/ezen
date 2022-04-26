@@ -18,6 +18,8 @@
 - 그래서, 8장~14장(7일)은 빠르게 진행하고 추가로 시간 여유가 있다면 아래 소스도 진행 할 수도 있다.
 - [자바리뷰학습자료 강의용소스 링크](https://github.com/miniplugin/ezen/tree/main/src/basic)
 - [구름 코딩테스트 링크 응시환경 체험하기](https://devth.goorm.io/)
+- 10장 그래픽스 클래스에 사용되는 기초지식 아래
+- ![10장 그래픽스 클래스에 사용되는 기초지식](./README/graphics.png)
 - [13장 버퍼와 파일업로드 웹에서 사용하는 곳](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/java/com/herokuapp/kimilgukboot2/util/FileUtilsApi.java)
 - [14장의 동시작업의 문제점 웹에서 보완하는 방법:트랜잭션사용](https://github.com/miniplugin/kimilguk-spring5/blob/master/src/main/java/com/edu/service/BoardServiceImpl.java)
 - [14장의 싱크로나이즈 동기화 웹에서 사용하는 곳](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/resources/static/js/app/index.js)
