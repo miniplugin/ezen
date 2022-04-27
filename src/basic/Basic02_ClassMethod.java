@@ -3,6 +3,8 @@ package basic;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 
 /**
@@ -105,6 +107,27 @@ public class Basic02_ClassMethod {
         System.out.println("타임스템프 기본형태: "+miliSecond);
         Timestamp timestamp = new Timestamp(miliSecond);//현재시간을 이쁘게 변환
         System.out.println("변환: "+timestamp);
+        //int[][] intArray = {{10, 20},{30, 40}};
+        //기본형 데이터:크기가 고정됨(아래) = 그래픽용어 스칼라데이터
+        int[][] intArray = new int[2][2];
+        intArray[0][0] = 10;
+        intArray[0][1] = 20;
+        intArray[1][0] = 30;
+        intArray[1][1] = 40;
+        System.out.println(Arrays.toString(intArray[0])+"\n"+Arrays.toString(intArray[1]));
+        //객체배열 데이터:크기가 유동적(아래) = 그래픽용어 벡터데이터
+        ArrayList<Integer[]> aList = new ArrayList<Integer[]>();
+        Integer[] integer1 = {10,20};
+        Integer[] integer2 = {30,40};
+        //... 계속 배열 데이터를 입력할 수 있다. 
+        aList.add(integer1);
+        aList.add(integer2);
+        System.out.println(Arrays.toString(aList.get(0))+"\n"+Arrays.toString(aList.get(1)));
+        //제네릭 타입을 사용하는 이유(아래)
+        ArrayList addData = new ArrayList();
+        addData.add(1);
+        addData.add(2);
+        System.out.println((int)addData.get(0)+(int)addData.get(1));
 	}
 }
 //추상클래스에 대한 연습(아래)
