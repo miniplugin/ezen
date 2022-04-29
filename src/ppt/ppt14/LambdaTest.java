@@ -7,7 +7,7 @@ public class LambdaTest{
 //			for (int i = 10; i >= 0; i--)
 //				System.out.print(i + " ");
 //		};
-		
+		//스레드 시작 중지 코드 추가
 		Runnable task = new Runnable() {
 			
 			@Override

@@ -91,7 +91,9 @@ public class Basic11_DataServiceClass {
 	List<MemberVO> memberList = new ArrayList<MemberVO>();
 	memberList.add(memberVO);
 	memberList.add(memberVO2);
-	memberList.add(memberVO3);
+	memberList.add(memberVO3);//입력
+	memberList.set(0, memberVO3);//수정
+	//memberList.remove(0);//삭제
 	//memberList.sort(Collections.reverseOrder());
 	memberList.sort(new Comparator<MemberVO>() {
 

@@ -109,19 +109,27 @@ public class Basic02_ClassMethod {
         System.out.println("변환: "+timestamp);
         //int[][] intArray = {{10, 20},{30, 40}};
         //기본형 데이터:크기가 고정됨(아래) = 그래픽용어 스칼라데이터
-        int[][] intArray = new int[2][2];
+        Integer[][] intArray = new Integer[2][2];
         intArray[0][0] = 10;
         intArray[0][1] = 20;
         intArray[1][0] = 30;
         intArray[1][1] = 40;
+        intArray[0][0] = 110;//수정
+        intArray[0][1] = null;//삭제
+        //조회(아래)
         System.out.println(Arrays.toString(intArray[0])+"\n"+Arrays.toString(intArray[1]));
         //객체배열 데이터:크기가 유동적(아래) = 그래픽용어 벡터데이터
         ArrayList<Integer[]> aList = new ArrayList<Integer[]>();
         Integer[] integer1 = {10,20};
         Integer[] integer2 = {30,40};
         //... 계속 배열 데이터를 입력할 수 있다. 
-        aList.add(integer1);
+        aList.add(integer1);//입력
         aList.add(integer2);
+        integer1[0] = 150;//수정
+        integer1[1] = 160;
+        aList.set(0, integer1);//수정
+        //aList.remove(0);//삭제
+        //출력
         System.out.println(Arrays.toString(aList.get(0))+"\n"+Arrays.toString(aList.get(1)));
         //제네릭 타입을 사용하는 이유(아래)
         ArrayList addData = new ArrayList();
