@@ -59,6 +59,11 @@
 - [LocalDateTime 클래스 시간이 사용된 스프링소스 링크](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/java/com/herokuapp/kimilgukboot2/domain/BaseTimeEntity.java)
 - ![PgAdmin프로그램으로 접속](./README/db_save.png)
 
+### 수업에서 학생과 함께 작업한 소스와 과제물 제출 서식 2가지 워드문서(아래)
+- [수업에서 작업한 소스](https://github.com/kimilguk/ezen)
+- [문제해결시나리오_제출서식](https://docs.google.com/document/d/17gvnoZe6gB-mlGJpqAaKregZqYLc0tg-/edit?usp=sharing&ouid=114190689644503551692&rtpof=true&sd=true)
+- [포트폴리오_제출서식](https://docs.google.com/document/d/1w8oSjZrdlh8O5YgvX81xnVFBQxWh6Lr9/edit?usp=sharing&ouid=114190689644503551692&rtpof=true&sd=true)
+
 ### 학생PC 준비사항
 #### 대면수업 시 프로젝트 내용이 자세히 보이지 않을 때 교사PC 화면공유 무료 프로그램 활용(아래)
 - https://www.freeconferencecall.com/ 다운로드: https://drive.google.com/file/d/1ZGj8EbbzSkqJYDkA-rnHoqLXYhLjeFN1/view?usp=sharing
