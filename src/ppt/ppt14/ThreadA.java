@@ -8,6 +8,8 @@ public class ThreadA {
 			System.out.println("스레드 B가 종료되기를 기다림...");
 			b.wait();
 			System.out.println("전체 합계: " + b.total);
+			b.stop();
+			//b.interrupt();
 		}
 	}
 }
@@ -22,7 +24,14 @@ class ThreadB extends Thread {
 			for (int i = 0; i < 1000; i++) {
 				total += i;
 			}
-			notify();
+			try {
+				//System.out.println("전체 합계: " + total);
+				notify();
+				wait();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }
