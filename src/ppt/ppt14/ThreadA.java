@@ -5,7 +5,9 @@ public class ThreadA {
 		b.start();
 
 		synchronized (b) {
-			System.out.println("스레드 B가 종료되기를 기다림...");
+			System.out.println("스레드 B가 종료되기를 기다림..."+b);
+			b.wait();
+			System.out.println("스레드 종료되기를 기다림..."+b);
 			b.wait();
 			System.out.println("전체 합계: " + b.total);
 			b.stop();
@@ -24,14 +26,7 @@ class ThreadB extends Thread {
 			for (int i = 0; i < 1000; i++) {
 				total += i;
 			}
-			try {
-				//System.out.println("전체 합계: " + total);
-				notify();
-				wait();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			notify();
 		}
 	}
 }
