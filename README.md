@@ -18,10 +18,10 @@
 참고로, 안드로이드X(AndroidX) 라이브러리 기반 개발환경: 모바일 앱(App) 프로그램(개발트렌드)
 그래서, 8장~14장은 빠르게 진행할 예정입니다. 대신에 각 장의 PPT문서 마지막에 필수로 알아야 할 내용을 추가실습으로 진행할 예정 입니다.
 ```
-- 각 장의 PPT문서 마지막에 필수로 알아야 할 내용의 추가 실습소스(아래).
+- 각 장의 PPT문서 마지막에 필수로 알아야 할 내용의 추가 실습소스(아래 소스 링크).
 - [자바리뷰학습자료 강의용소스 링크](https://github.com/miniplugin/ezen/tree/main/src/basic)
-- [구름 코딩테스트 링크 응시환경 체험하기](https://devth.goorm.io/)
 
+- [구름 코딩테스트 링크 응시환경 체험하기](https://devth.goorm.io/)
 - 10장 그래픽스 클래스에 사용되는 기초지식 아래
 - ![10장 그래픽스 클래스에 사용되는 기초지식](./README/graphics.png)
 - [13장 버퍼와 파일업로드 웹에서 사용하는 곳](https://github.com/kimilguk/kimilguk-boot2/blob/boot14_03/src/main/java/com/herokuapp/kimilgukboot2/util/FileUtilsApi.java)
