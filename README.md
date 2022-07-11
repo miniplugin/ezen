@@ -3,7 +3,7 @@
 ### 커리큘럼
 - 1차 코스(아래) 교재사용:Power Java Compact,출판사: 인피니트 북스
 - ![1차코스](./README/course1.png)
-- [Power Java 책의 ppt강의용 자바소스 수업에서진행](https://github.com/miniplugin/ezen/tree/main/src/ppt)
+- [Power Java 책의 강의용 PPT자료 https://bit.ly/3Iut8KP](https://bit.ly/3Iut8KP)
 - [Power Java 책의 mini project(학생개인진행) 소스답안](https://github.com/miniplugin/ezen/tree/main/src/miniproject)
 - [Power Java 책의 이론exercise(수업에서진행)와 실습exercise(학생개인진행)소스답안](https://github.com/miniplugin/ezen/tree/main/src/exercise)
 
@@ -16,9 +16,9 @@
 ```
 참고로, 스프링(Spring) 라이브러리 기반 개발환경: 웹(API서버) 프로그램(개발트렌드)
 참고로, 안드로이드X(AndroidX) 라이브러리 기반 개발환경: 모바일 앱(App) 프로그램(개발트렌드)
-그래서, 8장~14장은 빠르게 진행할 예정입니다. 대신에 각 장의 PPT문서 마지막에 필수로 알아야 할 내용을 추가실습으로 진행할 예정 입니다.
+그래서, 8장~14장은 빠르게 진행할 예정입니다. 대신에 필수로 알아야 할 내용은 수업 중 실습으로 진행할 예정 입니다.
 ```
-- 각 장의 PPT문서 마지막에 필수로 알아야 할 내용의 추가 실습소스(아래 소스 링크).
+- 각 장의 PPT수업에서 실습한 내용 중 필수로 알아야 할 내용을 실습소스만으로 정리(아래 소스 링크).
 - [자바리뷰학습자료 강의용소스 링크](https://github.com/miniplugin/ezen/tree/main/src/basic)
 
 - [구름 코딩테스트 링크 응시환경 체험하기](https://devth.goorm.io/)
