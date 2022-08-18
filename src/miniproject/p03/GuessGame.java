@@ -10,7 +10,7 @@ public class GuessGame {
 		int answer = (int) (Math.random()*100);
 		int guess, cnt=0;
 		do {
-			System.out.print("정답을 추측하여 보시오: ");
+			System.out.print("1부터 100까지 정답을 추측하여 보시오: ");
 			guess = sc.nextInt();
 			if(guess>answer) {
 				System.out.print("LOW\n");
