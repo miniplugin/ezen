@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 //Ctrl+Shift+O 를 하면 외부 라이브러리를 자동 임포트 할 수 있다.
 class User {
-	String userId, password;
-	static int count;
+	String userId, password; //Hip힙 메모리 영역의 변수는 객체의 도트연산자로 직접 접근이 불가능하다.
+	static int count; //스태틱 메모리 영역의 변수는 객체의 도트연산자로 직접 접근이 가능하다. 보안 때문에 보통 사용하지 않는다.
 
 	public User(String userId, String password) {
 		this.userId = userId;
