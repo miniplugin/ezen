@@ -3,7 +3,7 @@ package miniproject.p06;
 import java.util.Scanner;
 
 //Ctrl+Shift+O 를 하면 외부 라이브러리를 자동 임포트 할 수 있다.
-abstract class Sprite {
+abstract class Sprite { //스피릿은 게임에서 스테이지에 등장하는 총알, 비행기, 자동차등의 개릭터를 말한다.
 	int x=3, y=3;
 	abstract void move(char c);
 }
