@@ -7,12 +7,12 @@ abstract class Sprite {
 	int x=3, y=3;
 	abstract void move(char c);
 }
-class Main extends Sprite {
+class Mine extends Sprite {
 	void move(char c){ 
-		if( c == 'h' ) --x;
-		else if( c == 'j' ) --y;
-		else if( c == 'k' ) ++y;
-		else if( c == 'l' ) ++x;
+		if( c == 'l' ) --x;
+		else if( c == 'r' ) ++x;
+		else if( c == 'u' ) --y;
+		else if( c == 'd' ) ++y;
 	}
 }
 class Gold extends Sprite {
@@ -47,10 +47,10 @@ public class TextGame {
     			{ '#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#' }, 
     	};
         Scanner sc = new Scanner(System.in);
-        Main mine;
+        Mine mine;
         Monster monster;
         Gold gold;
-        mine = new Main();
+        mine = new Mine();
         monster = new Monster();
         gold = new Gold();
         while (true) {
@@ -67,7 +67,7 @@ public class TextGame {
                 }
             	System.out.println();
             }
-        	System.out.print("왼쪽(h), 위쪽(j), 아래쪽(k), 오른쪽(l): ");
+        	System.out.print("왼쪽(l), 위쪽(u), 아래쪽(d), 오른쪽(r): ");
         	char c = sc.next().charAt(0);    
             mine.move(c);
             monster.move(c);
