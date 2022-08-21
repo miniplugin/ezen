@@ -8,6 +8,7 @@ abstract class Sprite { //스피릿은 게임에서 스테이지에 등장하는
 	abstract void move(char c);
 }
 class Mine extends Sprite {
+	@Override
 	void move(char c){ 
 		if( c == 'l' ) --x;
 		else if( c == 'r' ) ++x;
@@ -20,12 +21,14 @@ class Gold extends Sprite {
 		x = 3;
 		y = 6;
 	}
+	@Override
 	void move(char c){ 	}
 }
 class Monster extends Sprite {
 	public Monster() {
 		x = y = 7;
 	}
+	@Override
 	void move(char c){ 
 		x += (Math.random()-0.5)>0? 1: -1;
 		y += (Math.random()-0.5)>0? 1: -1;
@@ -34,7 +37,7 @@ class Monster extends Sprite {
 public class TextGame {
 
     public static void main(String[] args) {
-    	char[][] map = { 
+    	char[][] map = { //2차원 [좌]표 배열
     			{ '#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#' }, 
     			{ '#',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','#' }, 
     			{ '#',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','#' }, 
@@ -54,7 +57,7 @@ public class TextGame {
         monster = new Monster();
         gold = new Gold();
         while (true) {
-            for(int y=0;y<map.length;y++) {
+            for(int y=0;y<map.length;y++) {//중첩 for문으로 [좌]표형태의 데이터를 출력한다.
                 for(int x=0;x<map[y].length;x++) {
                 	if( y == monster.y && x == monster.x )	
                     	System.out.print('M');
