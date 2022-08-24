@@ -25,6 +25,9 @@ public class CaesarCipher {
 
 	public static String encode(String enc, int offset) {
 		offset = offset % 26 + 26;
+		System.out.println((byte)'A');//일반문자를 아스키문자로 변환
+		System.out.println('A' + ('A' - 'A' + offset) % 26);
+		System.out.println((char)('A' + ('A' - 'A' + offset) % 26));
 		StringBuilder encoded = new StringBuilder();
 		for (char i : enc.toCharArray()) {
 			if (Character.isLetter(i)) {
