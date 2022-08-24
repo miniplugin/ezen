@@ -40,7 +40,6 @@ public class UserTest {
 				for (int i=0;i<User.count; i++)
 						System.out.println("{ " + list[i].userId + ", " + list[i].password + " }");
 				break;
-			}
 			case 4:
 				System.exit(0);//또는 break Loop; 처럼 반복문 상단에 라벨 이름으로 종료 할 수 잇다.
 				break;
