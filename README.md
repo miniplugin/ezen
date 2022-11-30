@@ -5,8 +5,9 @@
 - ![강의계획서](./README/course.png)
 - [Power Java 책의 강의용 PDF자료](https://drive.google.com/drive/folders/15-fAFBglfngKQ82M6DiD1Jgwc31UXRm7?usp=sharing)
 - mini project 프로그램 결과.(아래)
-- ![프로그램 결과](./README/miniproject.jpg)
-- ![일별박스오피스 프로그램 결과](./README/boxoffice.jpg)
+- ![전자계산기 미니프로젝트 결과](./README/calc10_02.jpg)
+- ![메모장 프로그램 결과](./README/memo13_02.jpg)
+- ![일별박스오피스 프로그램 결과](./README/boxoffice14_03.jpg)
 
 #### =====================================================
 ### 커리큘럼(예전자료_상단에 최신 자료를 이용해서 수업)
