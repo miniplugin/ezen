@@ -1,6 +1,15 @@
 # 자바 프로그래밍 과정 by 김일국 강사
 
 ### 커리큘럼
+- 교재사용:Power Java Compact,출판사: 인피니트 북스
+- ![강의계획서](./README/course.png)
+- [Power Java 책의 강의용 PDF자료](https://drive.google.com/drive/folders/15-fAFBglfngKQ82M6DiD1Jgwc31UXRm7?usp=sharing)
+- mini project 프로그램 결과.(아래)
+- ![프로그램 결과](./README/miniproject.jpg)
+- ![일별박스오피스 프로그램 결과](./README/boxoffice.jpg)
+
+#### =====================================================
+### 커리큘럼(예전자료_상단에 최신 자료를 이용해서 수업)
 - 1차 코스(아래) 교재사용:Power Java Compact,출판사: 인피니트 북스
 - ![1차코스](./README/course1.png)
 - [Power Java 책의 강의용 PPT자료](https://drive.google.com/drive/folders/15-fAFBglfngKQ82M6DiD1Jgwc31UXRm7?usp=sharing)
