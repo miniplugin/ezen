@@ -3,7 +3,7 @@
 ### 커리큘럼
 - 교재명:Power Java Compact, 출판사: 인피니트 북스
 - ![강의계획서](./README/course.png)
-- [자바 강의용 PDF자료 보기](https://drive.google.com/drive/folders/1HSQSPARuxEE8mS2KS3UmbtpSxQHaUoTU?usp=share_link)개강 시 오픈{Ctrl+클릭 새창으로}
+- [자바 강의용 PDF자료 보기](https://drive.google.com/drive/folders/1OWl9O7IF2f_2AvIxzktfpoBJ2hvRx-gj)개강 시 오픈{Ctrl+클릭 새창으로}
 ```
 - 과목소개(아래)
 일반적으로 공공기관이나 은행과 같이 신뢰가 필요하거나, 효율성이 높은 곳에서 사용하는 
