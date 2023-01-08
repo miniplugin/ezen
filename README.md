@@ -2,7 +2,7 @@
 
 ### 커리큘럼
 - 교재명:Power Java Compact, 출판사: 인피니트 북스
-- ![강의계획서](./README/course.png)
+- ![강의계획서](./README/course_new.png)
 - [자바 강의용 PDF자료 보기](https://drive.google.com/drive/folders/1OWl9O7IF2f_2AvIxzktfpoBJ2hvRx-gj)개강 시 오픈{Ctrl+클릭 새창으로}
 ```
 - 과목소개(아래)
@@ -25,7 +25,6 @@
 ```
 -![전자계산기 미니프로젝트 결과](./README/calc10_02.jpg)
 ```
-- [1차평가시작소스](https://github.com/miniplugin/ezen/blob/main/README/OneClass.java):클래스 기능 추가와 클래스 파일분리
 - 과목 후반부는
 * 파일 입출력 스트림 기능에 대해서 알아 보고 윈도우용 메모장 프로그램으로 
 기능을 구현해 봅니다. 그리고, 간단하게 자바에서 멀티 스레드 구현은 어떻게 
@@ -38,17 +37,19 @@
 (아래 미리보기 이미지)
 ```
 -![일별박스오피스 프로그램 결과](./README/boxoffice14_03.jpg)
-- [2차평가시작소스](https://github.com/miniplugin/ezen/tree/main/src/ezen_portfolio){학점 산출 프로그램 수업자료}
+
 #### =====================================================
-### 커리큘럼(예전자료_상단에 최신 자료를 이용해서 수업)
+### 이전 (구)커리큘럼(예전자료_상단에 최신 자료를 이용해서 수업)
 - 1차 코스(아래) 교재사용:Power Java Compact,출판사: 인피니트 북스
 - ![1차코스](./README/course1.png)
 - [Power Java 책의 강의용 PPT자료](https://drive.google.com/drive/folders/15-fAFBglfngKQ82M6DiD1Jgwc31UXRm7?usp=sharing)
 - [Power Java 책의 mini project(수업에서진행) 소스답안](https://github.com/miniplugin/ezen/tree/main/src/miniproject)
 - [Power Java 책의 이론exercise와 실습exercise은(학생개인진행)소스답안](https://github.com/miniplugin/ezen/tree/main/src/exercise)
+- [1차평가시작소스](https://github.com/miniplugin/ezen/blob/main/README/OneClass.java):클래스 기능 추가와 클래스 파일분리
 
 - 2차 코스(아래)
 - ![2차코스](./README/course2.png)
+- [2차평가시작소스](https://github.com/miniplugin/ezen/tree/main/src/ezen_portfolio){학점 산출 프로그램 수업자료}
 
 ### 참고사항
 - 1차코스 교재의 1장~7장 사이는 자바프로그램의 기초로 클래스를 사용하는 방법을 학습합니다. 각 장의 이론강의 중 1개 이상의 실습으로 진행 하게 됩니다.
