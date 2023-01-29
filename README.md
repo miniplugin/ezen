@@ -4,10 +4,7 @@
 - [넥스트js 강의교재 PDF 보기](https://drive.google.com/drive/folders/1VS-zZDtbWQWpW4w98B8SVKfvH-TcrBI3?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
 - [노드js와 데이터베이스 프로그래밍 강의교재 PDF 보기](https://drive.google.com/drive/folders/1O4-rw-DDIp1mh4o7A4NWRkhCKRDSLEHA?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
 
-### 복습평가 자료
-- [복습평가 제출용 워드 자료 모음](https://drive.google.com/drive/folders/1s0qi3G_x1uxBuR0JMkM2y-aPtUKNUjEK?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
-
-### 복습 일시
+### 학습 순서(복습 일시)
 + 1.개발자 환경 구축 : 리액트프로그래밍 강의교재 1회차 3교시 마친 후
 + 2.UI구현 : 리액트 프로그래밍 강의교재 2회차 3교시 마친 후
 + 3.프로그래밍 언어 응용 : 리액트프로그래밍 강의교재 10회차 3교시 마친 후
@@ -19,6 +16,11 @@
 + 8.서버프로그램 구현 : 노드js와 데이터베이스 활용 강의교재 4회차 2교시 마친 후
 + 9.SQL 활용 : 노드js와 데이터베이스 활용 강의교재 7회차 2교시 마친 후
 + 10.인터페이스 구현 : 노드js와 데이터베이스 활용 강의교재 14회차 3교시 마친 후
+
+### 복습평가 자료
+- [복습평가 제출용 워드 자료 모음](https://drive.google.com/drive/folders/1s0qi3G_x1uxBuR0JMkM2y-aPtUKNUjEK?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
+
+-----------------------------------------------------------------------
 
 # 자바 프로그래밍 과정 by 김일국 강사
 
