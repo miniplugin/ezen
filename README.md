@@ -3,9 +3,9 @@
 - ![과정소개](./README/fullstack_intro.jpg)
 
 ### 강사가 제작한 PDF 강의 교재
-- [리액트 프로그래밍 강의교재 PDF 보기](https://drive.google.com/drive/folders/1dwnJoSmMu6Hzy7iiOz_P7cuZfkT7lzBH?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
-- [넥스트js 강의교재 PDF 보기](https://drive.google.com/drive/folders/1VS-zZDtbWQWpW4w98B8SVKfvH-TcrBI3?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
-- [노드js와 데이터베이스 프로그래밍 강의교재 PDF 보기](https://drive.google.com/drive/folders/1O4-rw-DDIp1mh4o7A4NWRkhCKRDSLEHA?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
+- [리액트 프로그래밍 강의교재 PDF 보기](#)개강 시 오픈예정{Ctrl+클릭 새창으로}
+- [넥스트js 강의교재 PDF 보기](#)개강 시 오픈예정{Ctrl+클릭 새창으로}
+- [노드js와 데이터베이스 프로그래밍 강의교재 PDF 보기](#)개강 시 오픈예정{Ctrl+클릭 새창으로}
 
 ### 학습 순서(복습 일시)
 + 1.개발자 환경 구축 : 리액트프로그래밍 강의교재 1회차 3교시 마친 후
