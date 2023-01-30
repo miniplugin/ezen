@@ -1,4 +1,6 @@
-# 풀스택(Fullstack) 웹개발(react.js,node.js)양성과정 by 김일국 강사
+# 풀스택(Fullstack) 웹개발(react.js,node.js)양성과정
+- 강사명: 김일국(010-8175-6075)
+- ![과정소개](./README/fullstack_intro.jpg)
 ### 강사가 제작한 PDF 강의 교재
 - [리액트 프로그래밍 강의교재 PDF 보기](https://drive.google.com/drive/folders/1dwnJoSmMu6Hzy7iiOz_P7cuZfkT7lzBH?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
 - [넥스트js 강의교재 PDF 보기](https://drive.google.com/drive/folders/1VS-zZDtbWQWpW4w98B8SVKfvH-TcrBI3?usp=sharing)개강 시 오픈예정{Ctrl+클릭 새창으로}
