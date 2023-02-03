@@ -1,7 +1,6 @@
 # 풀스택(Fullstack) 웹개발(react.js,node.js)양성과정
 - 강사명: 김일국(email: boramcom@daum.net ,hp: 010-8175-6075) [강사 블로그](https://kimilguk.tistory.com/833){Ctrl+클릭 새창으로}
 - 현재 URL: https://github.com/miniplugin/ezen
-- ![과정소개](./README/fullstack_intro.jpg)
 
 ### 강사가 제작한 PDF 강의 교재
 - [리액트 프로그래밍 강의교재 PDF 보기](#)개강 시 오픈예정{Ctrl+클릭 새창으로}
@@ -26,7 +25,6 @@
 
 ### 온라인 평가(New)
 - [온라인 평가 사이트](http://kdigital.atosoft.net/) : 개강 시 아이디/암호 및 사용방법 알려줍니다.{Ctrl+클릭 새창으로}
-- ![평가일정](./README/fullstack_test.png)
 
 ### 온라인 코딩 테스트(New)
 - [강사 코딩 테스트 학습자료](https://github.com/miniplugin/ezen/blob/main/README.md) : 개강 시 오픈예정{Ctrl+클릭 새창으로}
