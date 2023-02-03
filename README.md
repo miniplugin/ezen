@@ -29,7 +29,7 @@
 - ![평가일정](./README/fullstack_test.png)
 
 ### 온라인 코딩 테스트(New)
-- [강사 코딩 테스트 학습자료](https://drive.google.com/drive/folders/1854Nmo6cAfqdQlzEhx53sxCjr7mHN-Cg?usp=sharing) : {Ctrl+클릭 새창으로}
+- [강사 코딩 테스트 학습자료](https://github.com/miniplugin/ezen/blob/main/README.md) : 개강 시 오픈예정{Ctrl+클릭 새창으로}
 - [온라인 코딩 사이트](https://devth.goorm.io/) : {Ctrl+클릭 새창으로}
 - [온라인 코딩 테스트 자료](https://level.goorm.io/) : {Ctrl+클릭 새창으로}
 -----------------------------------------------------------------------
