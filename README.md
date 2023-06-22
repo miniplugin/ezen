@@ -2,7 +2,7 @@
 - 강사명: 김일국 [강사 블로그](https://kimilguk.tistory.com/833){Ctrl+클릭 새창으로}
 - 현재 URL: https://github.com/miniplugin/ezen
 ![강의계획서](./README/fullstack_intro.jpg)
-![평가계획서](./README/fullstack_test2.jpg)
+![평가계획서](./README/fullstack_test2.png)
 
 ### 강사가 제작한 PDF 강의 교재
 - [리액트 프로그래밍 강의교재 PDF 보기](#)개강 시 오픈예정{Ctrl+클릭 새창으로}
