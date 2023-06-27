@@ -39,7 +39,7 @@
 ### 커리큘럼
 - 교재명:Power Java Compact, 출판사: 인피니트 북스
 - 1차 코스(아래)
-- ![강의계획서](./README/course_new.png)
+- ![강의계획서](./README/course1_1.png)
 - 2차 코스(아래)
 - ![2차코스](./README/course2.png)
 - [2차평가시작소스](https://github.com/miniplugin/ezen/tree/main/src/ezen_portfolio){학점 산출 프로그램 수업자료}
