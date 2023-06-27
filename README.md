@@ -70,7 +70,7 @@
 ![학점 산출 프로그램 결과](./README/portfolio.jpg)
 - 학점 산출 프로그램 클래스 다이어그램.(아래)
 ![학점 산출 프로그램 클래스 다이어그램](./README/classdiagram.jpg)
-- [2차 결과 포트폴리오_제출서식](https://docs.google.com/document/d/1w8oSjZrdlh8O5YgvX81xnVFBQxWh6Lr9/edit?usp=sharing&ouid=114190689644503551692&rtpof=true&sd=true)
+- [2차 결과 포트폴리오_제출서식](#) 개강 시 오픈예정{Ctrl+클릭 새창으로}
 
 #### =====================================================
 
