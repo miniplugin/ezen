@@ -39,9 +39,9 @@
 ### 커리큘럼
 - 교재명:Power Java Compact, 출판사: 인피니트 북스
 - 1차 코스(아래)
-- ![강의계획서](./README/course1_1.png)
+![강의계획서](./README/course1_1.png)
 - 2차 코스(아래)
-- ![2차코스](./README/course2.png)
+![2차코스](./README/course2.png)
 ```
 ### 1차 코스 과목소개(아래)
 일반적으로 공공기관이나 은행과 같이 신뢰가 필요하거나, 효율성이 높은 곳에서 사용하는 
@@ -67,9 +67,9 @@
 ### 2차 코스에서 자바로 만든 학점 산출 프로그램을 미리보기(수업시간에 같이 진행예정)
 - [학점 산출 프로그램 수업자료](https://github.com/miniplugin/ezen/tree/main/src/ezen_portfolio){Ctrl+클릭 새창으로}
 - 학점 산출 프로그램 1차 결과 아래.(2차결과는 학생이 작업예정)
-- ![학점 산출 프로그램 결과](./README/portfolio.jpg)
+![학점 산출 프로그램 결과](./README/portfolio.jpg)
 - 학점 산출 프로그램 클래스 다이어그램.(아래)
-- ![학점 산출 프로그램 클래스 다이어그램](./README/classdiagram.jpg)
+![학점 산출 프로그램 클래스 다이어그램](./README/classdiagram.jpg)
 - [2차 결과 포트폴리오_제출서식](https://docs.google.com/document/d/1w8oSjZrdlh8O5YgvX81xnVFBQxWh6Lr9/edit?usp=sharing&ouid=114190689644503551692&rtpof=true&sd=true)
 
 #### =====================================================
